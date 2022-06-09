@@ -12,7 +12,7 @@ namespace project.CONNECT_SQL
         private readonly string connection;
         public accessSQL()
         {
-            this.connection = "Data Source=25.67.193.151,1433;DataBase=BINAES;User ID=BINAESdb;Password=serverdb";
+            this.connection = "Data Source=LAPTOP-D15LDTRI;DataBase=BINAES;Integrated Security=true";
         }
 
         protected SqlConnection getConnection()

@@ -348,7 +348,7 @@ namespace project.FORMS
         }
         private void btnAñadirEvento_Click(object sender, EventArgs e)
         {
-            loadForm(new frmAñadirEvento());
+            loadForm(new frmAñadirEvento(eventComplement));
             btnBuscarEventos.BackColor = Color.FromArgb(32, 83, 117);
             btnAñadirEvento.BackColor = Color.FromArgb(25, 58, 79);
             btnEliminarEvento.BackColor = Color.FromArgb(32, 83, 117);

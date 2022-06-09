@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.paletteBINAES = new Krypton.Toolkit.KryptonPalette(this.components);
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new Krypton.Toolkit.KryptonTextBox();
@@ -76,7 +75,7 @@
             this.lblUsuario.Location = new System.Drawing.Point(25, 90);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(82, 25);
+            this.lblUsuario.Size = new System.Drawing.Size(89, 25);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -116,7 +115,7 @@
             this.lblContrasena.Location = new System.Drawing.Point(25, 180);
             this.lblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(112, 25);
+            this.lblContrasena.Size = new System.Drawing.Size(122, 25);
             this.lblContrasena.TabIndex = 2;
             this.lblContrasena.Text = "Contraseña";
             // 
@@ -206,7 +205,7 @@
             // 
             // picLogo
             // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Image = global::project.Properties.Resources.BINAES__logo____POO;
             this.picLogo.Location = new System.Drawing.Point(472, 93);
             this.picLogo.Margin = new System.Windows.Forms.Padding(4);
             this.picLogo.Name = "picLogo";
@@ -235,7 +234,7 @@
             // frmLogin
             // 
             this.AccessibleName = "";
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(834, 461);

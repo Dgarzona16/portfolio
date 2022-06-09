@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using project.CLASS;
 
 namespace project.CONNECT_SQL
 {
@@ -14,7 +15,7 @@ namespace project.CONNECT_SQL
     public interface SQLReaderWriter
     {
         DataTable consult(string a, string b);
-
+        bool Insert(NewEvent EventData);
     }
     //
     //Evento
@@ -23,6 +24,24 @@ namespace project.CONNECT_SQL
     {
         public EventSQL() : base()
         {
+        }
+        public DataTable getAreas()
+        {
+            DataTable ds = new DataTable();
+            using(var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand()) 
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT Id, Nombre FROM AREA";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = command;
+                    da.Fill(ds);
+                }
+            }
+            return ds;
         }
         DataTable SQLReaderWriter.consult(string word, string colunm)
         {
@@ -52,6 +71,28 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
+        public bool Insert(NewEvent EventData)
+        {
+            Console.WriteLine(EventData.FechaHora_Fin);
+            using(var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', CONVERT(datetime,'{EventData.FechaHora_Inicio}'), CONVERT(datetime,'{EventData.FechaHora_Fin}'), {EventData.CantidadParticipantes}, {EventData.Id_Area})";
+                    command.CommandType = CommandType.Text;
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
     }
     //
     //Coleccion
@@ -61,6 +102,7 @@ namespace project.CONNECT_SQL
         public CollectionSQL() : base()
         {
         }
+
         DataTable SQLReaderWriter.consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
@@ -92,6 +134,27 @@ namespace project.CONNECT_SQL
                 }
             }
             return dt;
+        }
+        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandType = CommandType.Text;
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
         }
     }
     //
@@ -138,6 +201,27 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
+        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandType = CommandType.Text;
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
     }
     //
     //Reserva
@@ -175,6 +259,27 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
+        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandType = CommandType.Text;
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
     }
     //
     //Usuario
@@ -211,6 +316,27 @@ namespace project.CONNECT_SQL
                 }
             }
             return dt;
+        }
+        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandType = CommandType.Text;
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
         }
     }
 }

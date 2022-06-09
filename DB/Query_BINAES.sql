@@ -153,3 +153,5 @@ INSERT INTO EVENTO
 
 INSERT INTO EVENTO
 	VALUES ('Conferencia de Becas Internacionales','',CONVERT(datetime,'26-07-22 9:00 AM',5),CONVERT(datetime,'26-07-22 11:00 AM',5),150,2);
+
+INSERT INTO ADMINISTRADOR VALUES ('admin','root');

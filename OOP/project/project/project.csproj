@@ -56,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLASS\FormTemplate.cs" />
+    <Compile Include="CLASS\NewData.cs" />
+    <Compile Include="CLASS\User_cache.cs" />
     <Compile Include="CONNECT_SQL\accessSQL.cs" />
     <Compile Include="CONNECT_SQL\CheckAdmin.cs" />
     <Compile Include="CONNECT_SQL\SQLReaderWriter.cs" />
@@ -159,6 +161,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\writing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BINAES %28logo%29 - POO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

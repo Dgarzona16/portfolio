@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
 using project.CONNECT_SQL;
+using project.CLASS;
 
 namespace project.FORMS
 {
@@ -23,6 +24,7 @@ namespace project.FORMS
             CheckAdmin checkAdmin = new CheckAdmin();
             if (checkAdmin.Login(txtUsuario.Text, txtContraseña.Text))
             {
+                User_cache.GetAdmin(txtUsuario.Text, txtContraseña.Text);
                 frmPrincipal principal = new frmPrincipal();
                 principal.Show();
                 principal.FormClosed += LogOut;

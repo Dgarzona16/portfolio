@@ -7,14 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using project.CLASS;
+using project.CONNECT_SQL;
 
 namespace project.FORMS
 {
     public partial class frmAñadirEvento : Form
     {
-        public frmAñadirEvento()
+        private EventSQL writer;
+        DataTable dt;
+        int cont = 0;
+        public frmAñadirEvento(FormTemplate completer)
         {
             InitializeComponent();
+            writer = new EventSQL();
+            dt = writer.getAreas();
+            foreach (DataRow row in dt.Rows)
+            {
+                cmbAreas.Items.Add(row[1].ToString());
+                cont++;
+            }
         }
         //
         //placeholder
@@ -27,7 +40,6 @@ namespace project.FORMS
                 lblTitulo.Visible = true;
             }
         }
-
         private void txtTitulo_Leave(object sender, EventArgs e)
         {
             if (txtTitulo.Text == "")
@@ -36,6 +48,74 @@ namespace project.FORMS
                 lblTitulo.Visible = false;
             }
         }
+        private void txtConfirmacion_Enter(object sender, EventArgs e)
+        {
+            if (txtConfirmacion.Text == "Confirmar contraseña")
+            {
+                txtConfirmacion.Text = "";
+                txtConfirmacion.StateCommon.Content.Color1 = Color.Black;
+                txtConfirmacion.UseSystemPasswordChar = true;
+            }
+        }
+        private void txtConfirmacion_Leave(object sender, EventArgs e)
+        {
+            if (txtConfirmacion.Text == "")
+            {
+                txtConfirmacion.Text = "Confirmar contraseña";
+                txtConfirmacion.StateCommon.Content.Color1 = Color.Gray;
+                txtConfirmacion.UseSystemPasswordChar = false;
+            }
+        }
+        //
+        //Agregar foto
+        //
+        private void btnAgregarPortada_Click(object sender, EventArgs e)
+        {
+            using(OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "jpg files (*.jpg)|*.jpg|png files (*.png)|*.png";
+                openFileDialog.RestoreDirectory = true;
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    picPortada.Image = Image.FromFile(openFileDialog.FileName);
+                }
+            }
+        }
+        //
+        //Enviar a BD
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            NewEvent @event = new NewEvent();
+            int area =1;
+            for (var i = 0; i < cont; i++)
+            {
+                if (cmbAreas.Text == dt.Rows[i][1].ToString())
+                {
+                    area = Convert.ToInt32(dt.Rows[i][0]);
+                }
+            }
+            if (txtConfirmacion.Text == User_cache.Password)
+            {
+                @event.Titulo = txtTitulo.Text;
+                @event.Id_Area = area;
+                @event.FechaHora_Inicio = dtpFecha_Init.Text + " " + dtpHora_init.Text;
+                @event.FechaHora_Fin = dtpFecha_Fin.Text + " " + dtpHora_fin.Text;
+                @event.CantidadParticipantes = Convert.ToInt32(nudCantParticipantes.Value);
 
+                if (writer.Insert(@event))
+                {
+                    MessageBox.Show($"{User_cache.Username} ha agregado el evento {@event.Titulo} correctamente");
+                    txtTitulo.Clear();
+                    txtConfirmacion.Clear();
+                    nudCantParticipantes.Value = 0;
+                    picPortada.Image = null;
+                }
+                else
+                {
+                    MessageBox.Show("Error al agregar el evento");
+                }
+            }
+        }
     }
 }
