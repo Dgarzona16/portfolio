@@ -61,6 +61,12 @@
     <Compile Include="CONNECT_SQL\accessSQL.cs" />
     <Compile Include="CONNECT_SQL\CheckAdmin.cs" />
     <Compile Include="CONNECT_SQL\SQLReaderWriter.cs" />
+    <Compile Include="FORMS\frmAñadirColeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirColeccion.Designer.cs">
+      <DependentUpon>frmAñadirColeccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\frmAñadirEvento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORMS\frmAñadirColeccion.resx">
+      <DependentUpon>frmAñadirColeccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORMS\frmAñadirEvento.resx">
       <DependentUpon>frmAñadirEvento.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,7 +133,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ASSETS\IMG\" />
+    <Folder Include="ASSETS\IMG\EVENT\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendar_white.png" />

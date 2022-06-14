@@ -15,7 +15,6 @@ namespace project.CONNECT_SQL
     public interface SQLReaderWriter
     {
         DataTable consult(string a, string b);
-        bool Insert(NewEvent EventData);
     }
     //
     //Evento
@@ -43,7 +42,7 @@ namespace project.CONNECT_SQL
             }
             return ds;
         }
-        DataTable SQLReaderWriter.consult(string word, string colunm)
+        public DataTable consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
 
@@ -73,14 +72,13 @@ namespace project.CONNECT_SQL
         }
         public bool Insert(NewEvent EventData)
         {
-            Console.WriteLine(EventData.FechaHora_Fin);
             using(var connection = getConnection())
             {
                 connection.Open();
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', CONVERT(datetime,'{EventData.FechaHora_Inicio}'), CONVERT(datetime,'{EventData.FechaHora_Fin}'), {EventData.CantidadParticipantes}, {EventData.Id_Area})";
+                    command.CommandText = $"INSERT INTO EVENTO (Titulo, Imagen, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}','{EventData.Imagen}', CONVERT(datetime,'{EventData.FechaHora_Inicio}'), CONVERT(datetime,'{EventData.FechaHora_Fin}'), {EventData.CantidadParticipantes}, {EventData.Id_Area})";
                     command.CommandType = CommandType.Text;
                     if (command.ExecuteNonQuery() > 0)
                     {
@@ -102,7 +100,24 @@ namespace project.CONNECT_SQL
         public CollectionSQL() : base()
         {
         }
-
+        public DataTable getAreas()
+        {
+            DataTable ds = new DataTable();
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT Id, Nombre FROM AREA";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = command;
+                    da.Fill(ds);
+                }
+            }
+            return ds;
+        }
         DataTable SQLReaderWriter.consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
@@ -135,7 +150,7 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
-        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        public bool Insert(NewCollection CollectionData)
         {
             using (var connection = getConnection())
             {
@@ -143,7 +158,7 @@ namespace project.CONNECT_SQL
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandText = $"INSERT INTO COLECCION (Nombre, Tipo, Genero, Id_Area) VALUES ('{CollectionData.Nombre}', '{CollectionData.Tipo}', '{CollectionData.Genero}', '{CollectionData.Id_Area}')";
                     command.CommandType = CommandType.Text;
                     if (command.ExecuteNonQuery() > 0)
                     {
@@ -201,7 +216,7 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
-        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        bool Insert(NewEvent EventData)//modificar
         {
             using (var connection = getConnection())
             {
@@ -259,7 +274,7 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
-        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        bool Insert(NewEvent EventData)//modificar
         {
             using (var connection = getConnection())
             {
@@ -317,7 +332,7 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
-        bool SQLReaderWriter.Insert(NewEvent EventData)//modificar
+        bool Insert(NewEvent EventData)//modificar
         {
             using (var connection = getConnection())
             {

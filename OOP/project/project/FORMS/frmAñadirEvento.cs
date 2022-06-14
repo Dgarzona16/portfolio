@@ -16,9 +16,10 @@ namespace project.FORMS
     public partial class frmAñadirEvento : Form
     {
         private EventSQL writer;
+        private string target;
         DataTable dt;
         int cont = 0;
-        public frmAñadirEvento(FormTemplate completer)
+        public frmAñadirEvento()
         {
             InitializeComponent();
             writer = new EventSQL();
@@ -79,6 +80,7 @@ namespace project.FORMS
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     picPortada.Image = Image.FromFile(openFileDialog.FileName);
+                    target = openFileDialog.FileName;
                 }
             }
         }
@@ -97,11 +99,15 @@ namespace project.FORMS
             }
             if (txtConfirmacion.Text == User_cache.Password)
             {
+                File.Copy(target, @"C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\ASSETS\IMG\EVENT\" + Path.GetFileName(target));
+
                 @event.Titulo = txtTitulo.Text;
                 @event.Id_Area = area;
                 @event.FechaHora_Inicio = dtpFecha_Init.Text + " " + dtpHora_init.Text;
                 @event.FechaHora_Fin = dtpFecha_Fin.Text + " " + dtpHora_fin.Text;
                 @event.CantidadParticipantes = Convert.ToInt32(nudCantParticipantes.Value);
+                @event.Imagen = @"C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\ASSETS\IMG\EVENT\" + Path.GetFileName(target);
+
 
                 if (writer.Insert(@event))
                 {
