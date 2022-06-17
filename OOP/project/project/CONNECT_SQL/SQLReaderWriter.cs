@@ -180,6 +180,42 @@ namespace project.CONNECT_SQL
         public MaterialSQL() : base()
         {
         }
+        public DataTable getFormato() 
+        {
+            DataTable dt = new DataTable();
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT Id, Tipo FROM FORMATO";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = command;
+                    da.Fill(dt);
+                }
+            }
+            return dt;
+        }
+        public DataTable getColecciones()
+        {
+            DataTable dt = new DataTable();
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT Id, Nombre FROM COLECCION";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = command;
+                    da.Fill(dt);
+                }
+            }
+            return dt;
+        }
         DataTable SQLReaderWriter.consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
@@ -216,7 +252,7 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
-        bool Insert(NewEvent EventData)//modificar
+        public bool Insert(NewMaterial materialData)
         {
             using (var connection = getConnection())
             {
@@ -224,7 +260,7 @@ namespace project.CONNECT_SQL
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandText = $"INSERT INTO MATERIAL (Nombre, Portada, Autor, Idioma, Editorial, Fecha_Publicacion,Id_Formato, Id_Coleccion) VALUES ('{materialData.Nombre}', '{materialData.Portada}', '{materialData.Autor}', '{materialData.Idioma}', '{materialData.Editorial}', CONVERT(date,'{materialData.FechaPublicacion}'), '{materialData.Id_Formato}', '{materialData.Id_Coleccion}')";
                     command.CommandType = CommandType.Text;
                     if (command.ExecuteNonQuery() > 0)
                     {

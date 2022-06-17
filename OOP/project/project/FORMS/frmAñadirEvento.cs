@@ -89,7 +89,8 @@ namespace project.FORMS
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             NewEvent @event = new NewEvent();
-            int area =1;
+            int area = 0;
+            string ruta = "ASSETS/IMG/EVENT/";
             for (var i = 0; i < cont; i++)
             {
                 if (cmbAreas.Text == dt.Rows[i][1].ToString())
@@ -99,14 +100,14 @@ namespace project.FORMS
             }
             if (txtConfirmacion.Text == User_cache.Password)
             {
-                File.Copy(target, @"C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\ASSETS\IMG\EVENT\" + Path.GetFileName(target));
+                File.Copy(target, AppDomain.CurrentDomain.BaseDirectory + ruta + Path.GetFileName(target));
 
                 @event.Titulo = txtTitulo.Text;
                 @event.Id_Area = area;
                 @event.FechaHora_Inicio = dtpFecha_Init.Text + " " + dtpHora_init.Text;
                 @event.FechaHora_Fin = dtpFecha_Fin.Text + " " + dtpHora_fin.Text;
                 @event.CantidadParticipantes = Convert.ToInt32(nudCantParticipantes.Value);
-                @event.Imagen = @"C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\ASSETS\IMG\EVENT\" + Path.GetFileName(target);
+                @event.Imagen = ruta + Path.GetFileName(target);
 
 
                 if (writer.Insert(@event))

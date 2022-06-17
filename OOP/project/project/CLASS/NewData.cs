@@ -28,4 +28,18 @@ namespace project.CLASS
 
         public NewCollection() { }
     }
+
+    public class NewMaterial
+    {
+        public string Nombre;
+        public string Autor;
+        public string Editorial;
+        public string FechaPublicacion;
+        public string Idioma;
+        public string Portada;
+        public int Id_Formato;
+        public int Id_Coleccion;
+
+        public NewMaterial() { }
+    }
 }

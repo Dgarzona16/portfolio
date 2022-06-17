@@ -394,6 +394,7 @@ namespace project.FORMS
         }
         private void btnAñadirMaterial_Click(object sender, EventArgs e)
         {
+            loadForm(new frmAñadirMaterial());
             btnBuscarMaterial.BackColor = Color.FromArgb(32, 83, 117);
             btnAñadirMaterial.BackColor = Color.FromArgb(25, 58, 79);
             btnEliminarMaterial.BackColor = Color.FromArgb(32, 83, 117);

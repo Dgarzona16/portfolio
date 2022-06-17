@@ -36,3 +36,4 @@ C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\obj\Debu
 C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\obj\Debug\project.exe
 C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\obj\Debug\project.pdb
 C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\obj\Debug\project.FORMS.frmAñadirColeccion.resources
+C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\obj\Debug\project.FORMS.frmAñadirMaterial.resources
