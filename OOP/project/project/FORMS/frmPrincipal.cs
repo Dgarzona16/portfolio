@@ -439,6 +439,7 @@ namespace project.FORMS
         }
         private void btnAñadirUsuario_Click(object sender, EventArgs e)
         {
+            loadForm(new frmAñadirUsuario());
             btnBuscarUsuario.BackColor = Color.FromArgb(32, 83, 117);
             btnAñadirUsuario.BackColor = Color.FromArgb(25, 58, 79);
             btnEliminarUsuario.BackColor = Color.FromArgb(32, 83, 117);

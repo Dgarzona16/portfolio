@@ -16,7 +16,7 @@ namespace project.FORMS
     public partial class frmAñadirEvento : Form
     {
         private EventSQL writer;
-        private string target;
+        private string target ="";
         DataTable dt;
         int cont = 0;
         public frmAñadirEvento()
@@ -74,7 +74,7 @@ namespace project.FORMS
         {
             using(OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.InitialDirectory = @"c:\\";
                 openFileDialog.Filter = "jpg files (*.jpg)|*.jpg|png files (*.png)|*.png";
                 openFileDialog.RestoreDirectory = true;
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -85,7 +85,15 @@ namespace project.FORMS
             }
         }
         //
+        //Agregar objetivos 
+        //
+        private void btnAddObjetivos_Click(object sender, EventArgs e)
+        {
+            cmbObjetivos.Items.Add(cmbObjetivos.Text);
+        }
+        //
         //Enviar a BD
+        //
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             NewEvent @event = new NewEvent();
@@ -100,23 +108,33 @@ namespace project.FORMS
             }
             if (txtConfirmacion.Text == User_cache.Password)
             {
-                File.Copy(target, AppDomain.CurrentDomain.BaseDirectory + ruta + Path.GetFileName(target));
+                if(target != "")
+                {
+                    File.Copy(target, AppDomain.CurrentDomain.BaseDirectory + ruta + Path.GetFileName(target));
+                    @event.Imagen = ruta + Path.GetFileName(target);
+                }
 
                 @event.Titulo = txtTitulo.Text;
                 @event.Id_Area = area;
                 @event.FechaHora_Inicio = dtpFecha_Init.Text + " " + dtpHora_init.Text;
                 @event.FechaHora_Fin = dtpFecha_Fin.Text + " " + dtpHora_fin.Text;
                 @event.CantidadParticipantes = Convert.ToInt32(nudCantParticipantes.Value);
-                @event.Imagen = ruta + Path.GetFileName(target);
+                
 
 
                 if (writer.Insert(@event))
                 {
+                    int id = writer.getId(@event);
+                    foreach (string objetivo in cmbObjetivos.Items)
+                    {
+                        writer.InsertObjetivo(id, objetivo);
+                    }
                     MessageBox.Show($"{User_cache.Username} ha agregado el evento {@event.Titulo} correctamente");
                     txtTitulo.Clear();
                     txtConfirmacion.Clear();
                     nudCantParticipantes.Value = 0;
                     picPortada.Image = null;
+                    
                 }
                 else
                 {

@@ -319,7 +319,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnAgregar.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.TabIndex = 19;
-            this.btnAgregar.Values.Text = "Agregar Evento";
+            this.btnAgregar.Values.Text = "Agregar Material";
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // frmAñadirMaterial

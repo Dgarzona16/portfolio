@@ -44,8 +44,12 @@
             this.txtConfirmacion = new Krypton.Toolkit.KryptonTextBox();
             this.cmbAreas = new Krypton.Toolkit.KryptonComboBox();
             this.lblArea = new Krypton.Toolkit.KryptonLabel();
+            this.lblObjetivos = new Krypton.Toolkit.KryptonLabel();
+            this.cmbObjetivos = new Krypton.Toolkit.KryptonComboBox();
+            this.btnAddObjetivos = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.picPortada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAreas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbObjetivos)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitulo
@@ -81,8 +85,8 @@
             // 
             // dtpFecha_Init
             // 
-            this.dtpFecha_Init.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha_Init.CustomFormat = "dd-MM-yyyy";
+            this.dtpFecha_Init.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha_Init.Location = new System.Drawing.Point(12, 157);
             this.dtpFecha_Init.Name = "dtpFecha_Init";
             this.dtpFecha_Init.Size = new System.Drawing.Size(101, 22);
@@ -125,8 +129,8 @@
             // 
             // dtpFecha_Fin
             // 
-            this.dtpFecha_Fin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha_Fin.CustomFormat = "dd-MM-yyyy";
+            this.dtpFecha_Fin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha_Fin.Location = new System.Drawing.Point(12, 245);
             this.dtpFecha_Fin.Name = "dtpFecha_Fin";
             this.dtpFecha_Fin.Size = new System.Drawing.Size(101, 22);
@@ -149,7 +153,7 @@
             // 
             // lblParticipantes
             // 
-            this.lblParticipantes.Location = new System.Drawing.Point(12, 289);
+            this.lblParticipantes.Location = new System.Drawing.Point(283, 115);
             this.lblParticipantes.Name = "lblParticipantes";
             this.lblParticipantes.Size = new System.Drawing.Size(259, 25);
             this.lblParticipantes.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,7 +163,7 @@
             // 
             // nudCantParticipantes
             // 
-            this.nudCantParticipantes.Location = new System.Drawing.Point(12, 330);
+            this.nudCantParticipantes.Location = new System.Drawing.Point(283, 156);
             this.nudCantParticipantes.Name = "nudCantParticipantes";
             this.nudCantParticipantes.Size = new System.Drawing.Size(49, 21);
             this.nudCantParticipantes.StateCommon.Content.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,7 +171,7 @@
             // 
             // picPortada
             // 
-            this.picPortada.Location = new System.Drawing.Point(510, 27);
+            this.picPortada.Location = new System.Drawing.Point(569, 19);
             this.picPortada.Name = "picPortada";
             this.picPortada.Size = new System.Drawing.Size(240, 205);
             this.picPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -176,7 +180,7 @@
             // 
             // btnAgregarPortada
             // 
-            this.btnAgregarPortada.Location = new System.Drawing.Point(517, 267);
+            this.btnAgregarPortada.Location = new System.Drawing.Point(576, 245);
             this.btnAgregarPortada.Name = "btnAgregarPortada";
             this.btnAgregarPortada.Size = new System.Drawing.Size(233, 37);
             this.btnAgregarPortada.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -250,15 +254,16 @@
             this.cmbAreas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAreas.DropDownWidth = 121;
             this.cmbAreas.IntegralHeight = false;
-            this.cmbAreas.Location = new System.Drawing.Point(12, 401);
+            this.cmbAreas.Location = new System.Drawing.Point(283, 58);
             this.cmbAreas.Name = "cmbAreas";
-            this.cmbAreas.Size = new System.Drawing.Size(259, 21);
+            this.cmbAreas.Size = new System.Drawing.Size(259, 20);
+            this.cmbAreas.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAreas.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cmbAreas.TabIndex = 14;
             // 
             // lblArea
             // 
-            this.lblArea.Location = new System.Drawing.Point(12, 370);
+            this.lblArea.Location = new System.Drawing.Point(283, 27);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(51, 25);
             this.lblArea.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -266,12 +271,65 @@
             this.lblArea.TabIndex = 15;
             this.lblArea.Values.Text = "Area";
             // 
+            // lblObjetivos
+            // 
+            this.lblObjetivos.Location = new System.Drawing.Point(12, 300);
+            this.lblObjetivos.Name = "lblObjetivos";
+            this.lblObjetivos.Size = new System.Drawing.Size(101, 25);
+            this.lblObjetivos.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObjetivos.StateCommon.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObjetivos.TabIndex = 16;
+            this.lblObjetivos.Values.Text = "Objetivos";
+            // 
+            // cmbObjetivos
+            // 
+            this.cmbObjetivos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbObjetivos.DropDownWidth = 121;
+            this.cmbObjetivos.IntegralHeight = false;
+            this.cmbObjetivos.Location = new System.Drawing.Point(12, 331);
+            this.cmbObjetivos.Name = "cmbObjetivos";
+            this.cmbObjetivos.Size = new System.Drawing.Size(259, 20);
+            this.cmbObjetivos.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbObjetivos.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cmbObjetivos.TabIndex = 17;
+            // 
+            // btnAddObjetivos
+            // 
+            this.btnAddObjetivos.Location = new System.Drawing.Point(12, 373);
+            this.btnAddObjetivos.Name = "btnAddObjetivos";
+            this.btnAddObjetivos.Size = new System.Drawing.Size(162, 37);
+            this.btnAddObjetivos.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddObjetivos.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddObjetivos.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddObjetivos.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddObjetivos.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddObjetivos.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddObjetivos.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddObjetivos.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAddObjetivos.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddObjetivos.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddObjetivos.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddObjetivos.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddObjetivos.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddObjetivos.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddObjetivos.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddObjetivos.TabIndex = 18;
+            this.btnAddObjetivos.Values.Text = "Agregar Objetivo";
+            this.btnAddObjetivos.Click += new System.EventHandler(this.btnAddObjetivos_Click);
+            // 
             // frmAñadirEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(843, 488);
+            this.Controls.Add(this.btnAddObjetivos);
+            this.Controls.Add(this.cmbObjetivos);
+            this.Controls.Add(this.lblObjetivos);
             this.Controls.Add(this.lblArea);
             this.Controls.Add(this.cmbAreas);
             this.Controls.Add(this.txtConfirmacion);
@@ -293,6 +351,7 @@
             this.Text = "frmAñadirEvento";
             ((System.ComponentModel.ISupportInitialize)(this.picPortada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAreas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbObjetivos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +375,8 @@
         private Krypton.Toolkit.KryptonTextBox txtConfirmacion;
         private Krypton.Toolkit.KryptonComboBox cmbAreas;
         private Krypton.Toolkit.KryptonLabel lblArea;
+        private Krypton.Toolkit.KryptonLabel lblObjetivos;
+        private Krypton.Toolkit.KryptonComboBox cmbObjetivos;
+        private Krypton.Toolkit.KryptonButton btnAddObjetivos;
     }
 }

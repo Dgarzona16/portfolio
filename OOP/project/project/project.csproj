@@ -79,6 +79,12 @@
     <Compile Include="FORMS\frmAñadirMaterial.Designer.cs">
       <DependentUpon>frmAñadirMaterial.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\frmAñadirUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirUsuario.Designer.cs">
+      <DependentUpon>frmAñadirUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\frmBuscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\frmAñadirMaterial.resx">
       <DependentUpon>frmAñadirMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmAñadirUsuario.resx">
+      <DependentUpon>frmAñadirUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\frmBuscar.resx">
       <DependentUpon>frmBuscar.cs</DependentUpon>

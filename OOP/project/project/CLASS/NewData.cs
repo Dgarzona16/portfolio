@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace project.CLASS
 {
+    //
+    //Objeto de evento
+    //
     public class NewEvent
     {
         public string Titulo;
-        public string Portada;
         public string FechaHora_Inicio;
         public string FechaHora_Fin;
         public int CantidadParticipantes;
@@ -18,7 +20,9 @@ namespace project.CLASS
 
         public NewEvent() { }
     }
-
+    //
+    //Objeto de coleccion
+    //
     public class NewCollection
     {
         public string Nombre;
@@ -28,7 +32,9 @@ namespace project.CLASS
 
         public NewCollection() { }
     }
-
+    //
+    //Objeto de material
+    //
     public class NewMaterial
     {
         public string Nombre;
@@ -41,5 +47,32 @@ namespace project.CLASS
         public int Id_Coleccion;
 
         public NewMaterial() { }
+    }
+    //
+    //Objeto de Reserva
+    //
+    public class NewReservation//modificar
+    {
+        public int Id_Evento;
+        public int Id_Usuario;
+        public string FechaHora_Inicio;
+        public string FechaHora_Fin;
+
+        public NewReservation() { }
+    }
+    //
+    //Objeto de Usuario
+    //
+    public class NewUser
+    {
+        public string Nombre;
+        public string Direccion;
+        public string Institucion;
+        public string Telefono;
+        public string Correo;
+        public string Fotografia;
+        public string Ocupacion;
+
+        public NewUser() { }
     }
 }

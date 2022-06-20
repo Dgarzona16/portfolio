@@ -18,10 +18,8 @@ namespace project.FORMS
         MaterialSQL writer = new MaterialSQL();
         DataTable dtFormato;
         DataTable dtColeccion;
-        int contFormato = 0;
-        int contColeccion = 0;
-        private string target;
-        private const string ruta = "/ASSETS/IMG/MATERIAL/";
+        private string target = "";
+        private const string ruta = "ASSETS/IMG/MATERIAL/";
         public frmAñadirMaterial()
         {
             InitializeComponent();
@@ -29,13 +27,11 @@ namespace project.FORMS
             foreach (DataRow row in dtFormato.Rows)
             {
                 cmbFormato.Items.Add(row[1].ToString());
-                contFormato++;
             }
             dtColeccion = writer.getColecciones();
             foreach (DataRow row in dtColeccion.Rows)
             {
                 cmbColeccion.Items.Add(row[1].ToString());
-                contColeccion++;
             }
 
         }
@@ -133,14 +129,14 @@ namespace project.FORMS
             NewMaterial @material = new NewMaterial();
             int idFormato = 0;
             int idColeccion = 0;
-            for (int i = 0; i < contFormato; i++)
+            for (int i = 0; i < dtFormato.Rows.Count; i++)
             {
                 if (cmbFormato.Text == dtFormato.Rows[i][1].ToString())
                 {
                     idFormato = Convert.ToInt32(dtFormato.Rows[i][0]);
                 }
             }
-            for (int i = 0; i < contColeccion; i++)
+            for (int i = 0; i < dtColeccion.Rows.Count; i++)
             {
                 if (cmbColeccion.Text == dtColeccion.Rows[i][1].ToString())
                 {
@@ -149,8 +145,11 @@ namespace project.FORMS
             }
             if (txtConfirmacion.Text == User_cache.Password)
             {
-                File.Copy(target, AppDomain.CurrentDomain.BaseDirectory + ruta + Path.GetFileName(target));
-
+                if(target != "")
+                {
+                    File.Copy(target, AppDomain.CurrentDomain.BaseDirectory + ruta + Path.GetFileName(target));
+                    @material.Portada = ruta + Path.GetFileName(target);
+                }
                 @material.Nombre = txtNombre.Text;
                 @material.Autor = txtAutor.Text;
                 @material.Editorial = txtEditorial.Text;
@@ -158,7 +157,6 @@ namespace project.FORMS
                 @material.Idioma = cmbIdiomas.Text;
                 @material.Id_Formato = idFormato;
                 @material.Id_Coleccion = idColeccion;
-                @material.Portada = ruta + Path.GetFileName(target);
 
                 if (writer.Insert(@material))
                 {

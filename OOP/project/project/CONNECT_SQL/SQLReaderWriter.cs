@@ -42,6 +42,22 @@ namespace project.CONNECT_SQL
             }
             return ds;
         }
+        public int getId(NewEvent EventData)
+        {
+            int id;
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"SELECT Id FROM EVENTO WHERE Titulo = '{EventData.Titulo}' AND FechaHora_Inicio = CONVERT(datetime,'{EventData.FechaHora_Inicio}') AND FechaHora_Fin = CONVERT(datetime,'{EventData.FechaHora_Fin}') AND CantidadParticipantes = {EventData.CantidadParticipantes} AND Imagen = '{EventData.Imagen}' AND Id_Area = {EventData.Id_Area}";
+                    command.CommandType = CommandType.Text;
+                    id = (int)command.ExecuteScalar();
+                }
+            }
+            return id;
+        }
         public DataTable consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
@@ -90,6 +106,20 @@ namespace project.CONNECT_SQL
                     }
                 }
             }
+        }
+        public void InsertObjetivo(int id,string objetivo)
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO OBJETIVO (Id_Evento, Objectivo) VALUES ({id}, '{objetivo}')";
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
+                }
+            }       
         }
     }
     //
@@ -340,7 +370,7 @@ namespace project.CONNECT_SQL
         public UserSQL() : base()
         {
         }
-        DataTable SQLReaderWriter.consult(string word, string colunm)
+        public DataTable consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
 
@@ -368,7 +398,7 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
-        bool Insert(NewEvent EventData)//modificar
+        public bool Insert(NewUser UserData)
         {
             using (var connection = getConnection())
             {
@@ -376,7 +406,7 @@ namespace project.CONNECT_SQL
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandText = $"INSERT INTO USUARIO (Nombre, Direccion, Institucion, Telefono, Correo, Fotografia, Ocupacion) VALUES ('{UserData.Nombre}', '{UserData.Direccion}', '{UserData.Institucion}', '{UserData.Telefono}', '{UserData.Correo}', '{UserData.Fotografia}', '{UserData.Ocupacion}')";
                     command.CommandType = CommandType.Text;
                     if (command.ExecuteNonQuery() > 0)
                     {
