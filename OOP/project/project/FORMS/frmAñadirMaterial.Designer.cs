@@ -46,15 +46,23 @@
             this.cmbColeccion = new Krypton.Toolkit.KryptonComboBox();
             this.txtConfirmacion = new Krypton.Toolkit.KryptonTextBox();
             this.btnAgregar = new Krypton.Toolkit.KryptonButton();
+            this.chkDOI = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkISSN = new Krypton.Toolkit.KryptonCheckBox();
+            this.chkISBN = new Krypton.Toolkit.KryptonCheckBox();
+            this.lblEtiqueta = new Krypton.Toolkit.KryptonLabel();
+            this.cmbPalabras = new Krypton.Toolkit.KryptonComboBox();
+            this.lblPalabras = new Krypton.Toolkit.KryptonLabel();
+            this.btnAddPalabras = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.cmbIdiomas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPortada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFormato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbColeccion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPalabras)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombre
             // 
-            this.lblNombre.Location = new System.Drawing.Point(12, 33);
+            this.lblNombre.Location = new System.Drawing.Point(12, 23);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(200, 25);
             this.lblNombre.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,7 +73,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(12, 64);
+            this.txtNombre.Location = new System.Drawing.Point(12, 54);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(206, 27);
             this.txtNombre.StateActive.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -85,7 +93,7 @@
             // 
             // lblAutor
             // 
-            this.lblAutor.Location = new System.Drawing.Point(12, 130);
+            this.lblAutor.Location = new System.Drawing.Point(12, 107);
             this.lblAutor.Name = "lblAutor";
             this.lblAutor.Size = new System.Drawing.Size(170, 25);
             this.lblAutor.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,7 +104,7 @@
             // 
             // txtAutor
             // 
-            this.txtAutor.Location = new System.Drawing.Point(12, 161);
+            this.txtAutor.Location = new System.Drawing.Point(12, 138);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(206, 27);
             this.txtAutor.StateActive.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -127,7 +135,7 @@
             "Japones",
             "Italiano",
             "Mandarin"});
-            this.cmbIdiomas.Location = new System.Drawing.Point(12, 324);
+            this.cmbIdiomas.Location = new System.Drawing.Point(12, 308);
             this.cmbIdiomas.Name = "cmbIdiomas";
             this.cmbIdiomas.Size = new System.Drawing.Size(170, 20);
             this.cmbIdiomas.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,7 +144,7 @@
             // 
             // lblIdioma
             // 
-            this.lblIdioma.Location = new System.Drawing.Point(12, 293);
+            this.lblIdioma.Location = new System.Drawing.Point(12, 277);
             this.lblIdioma.Name = "lblIdioma";
             this.lblIdioma.Size = new System.Drawing.Size(71, 25);
             this.lblIdioma.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,7 +154,7 @@
             // 
             // txtEditorial
             // 
-            this.txtEditorial.Location = new System.Drawing.Point(12, 244);
+            this.txtEditorial.Location = new System.Drawing.Point(12, 221);
             this.txtEditorial.Name = "txtEditorial";
             this.txtEditorial.Size = new System.Drawing.Size(206, 27);
             this.txtEditorial.StateActive.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -166,7 +174,7 @@
             // 
             // lblEditorial
             // 
-            this.lblEditorial.Location = new System.Drawing.Point(12, 213);
+            this.lblEditorial.Location = new System.Drawing.Point(12, 190);
             this.lblEditorial.Name = "lblEditorial";
             this.lblEditorial.Size = new System.Drawing.Size(200, 25);
             this.lblEditorial.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -216,7 +224,7 @@
             // 
             this.dtpFechaPublicacion.CustomFormat = "dd-MM-yyyy";
             this.dtpFechaPublicacion.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaPublicacion.Location = new System.Drawing.Point(311, 69);
+            this.dtpFechaPublicacion.Location = new System.Drawing.Point(293, 59);
             this.dtpFechaPublicacion.Name = "dtpFechaPublicacion";
             this.dtpFechaPublicacion.Size = new System.Drawing.Size(101, 22);
             this.dtpFechaPublicacion.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -226,7 +234,7 @@
             // 
             // lblFecha
             // 
-            this.lblFecha.Location = new System.Drawing.Point(311, 33);
+            this.lblFecha.Location = new System.Drawing.Point(293, 23);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(210, 25);
             this.lblFecha.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,7 +244,7 @@
             // 
             // lblFormato
             // 
-            this.lblFormato.Location = new System.Drawing.Point(311, 130);
+            this.lblFormato.Location = new System.Drawing.Point(12, 344);
             this.lblFormato.Name = "lblFormato";
             this.lblFormato.Size = new System.Drawing.Size(81, 25);
             this.lblFormato.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,7 +254,7 @@
             // 
             // lblColeccion
             // 
-            this.lblColeccion.Location = new System.Drawing.Point(311, 213);
+            this.lblColeccion.Location = new System.Drawing.Point(293, 107);
             this.lblColeccion.Name = "lblColeccion";
             this.lblColeccion.Size = new System.Drawing.Size(101, 25);
             this.lblColeccion.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -260,9 +268,9 @@
             this.cmbFormato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFormato.DropDownWidth = 192;
             this.cmbFormato.IntegralHeight = false;
-            this.cmbFormato.Location = new System.Drawing.Point(311, 162);
+            this.cmbFormato.Location = new System.Drawing.Point(12, 376);
             this.cmbFormato.Name = "cmbFormato";
-            this.cmbFormato.Size = new System.Drawing.Size(192, 20);
+            this.cmbFormato.Size = new System.Drawing.Size(170, 20);
             this.cmbFormato.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFormato.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cmbFormato.TabIndex = 17;
@@ -273,7 +281,7 @@
             this.cmbColeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbColeccion.DropDownWidth = 121;
             this.cmbColeccion.IntegralHeight = false;
-            this.cmbColeccion.Location = new System.Drawing.Point(311, 244);
+            this.cmbColeccion.Location = new System.Drawing.Point(293, 138);
             this.cmbColeccion.Name = "cmbColeccion";
             this.cmbColeccion.Size = new System.Drawing.Size(192, 20);
             this.cmbColeccion.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -282,7 +290,7 @@
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(459, 397);
+            this.txtConfirmacion.Location = new System.Drawing.Point(291, 451);
             this.txtConfirmacion.Name = "txtConfirmacion";
             this.txtConfirmacion.Size = new System.Drawing.Size(341, 31);
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -322,11 +330,102 @@
             this.btnAgregar.Values.Text = "Agregar Material";
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // chkDOI
+            // 
+            this.chkDOI.Location = new System.Drawing.Point(293, 255);
+            this.chkDOI.Name = "chkDOI";
+            this.chkDOI.Size = new System.Drawing.Size(45, 20);
+            this.chkDOI.TabIndex = 21;
+            this.chkDOI.Values.Text = "DOI";
+            // 
+            // chkISSN
+            // 
+            this.chkISSN.Location = new System.Drawing.Point(293, 229);
+            this.chkISSN.Name = "chkISSN";
+            this.chkISSN.Size = new System.Drawing.Size(49, 20);
+            this.chkISSN.TabIndex = 22;
+            this.chkISSN.Values.Text = "ISSN";
+            // 
+            // chkISBN
+            // 
+            this.chkISBN.Location = new System.Drawing.Point(293, 203);
+            this.chkISBN.Name = "chkISBN";
+            this.chkISBN.Size = new System.Drawing.Size(50, 20);
+            this.chkISBN.TabIndex = 23;
+            this.chkISBN.Values.Text = "ISBN";
+            // 
+            // lblEtiqueta
+            // 
+            this.lblEtiqueta.Location = new System.Drawing.Point(293, 172);
+            this.lblEtiqueta.Name = "lblEtiqueta";
+            this.lblEtiqueta.Size = new System.Drawing.Size(101, 25);
+            this.lblEtiqueta.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEtiqueta.StateCommon.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEtiqueta.TabIndex = 25;
+            this.lblEtiqueta.Values.Text = "Etiquetas";
+            // 
+            // cmbPalabras
+            // 
+            this.cmbPalabras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbPalabras.DropDownWidth = 121;
+            this.cmbPalabras.IntegralHeight = false;
+            this.cmbPalabras.Location = new System.Drawing.Point(291, 334);
+            this.cmbPalabras.Name = "cmbPalabras";
+            this.cmbPalabras.Size = new System.Drawing.Size(192, 20);
+            this.cmbPalabras.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPalabras.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cmbPalabras.TabIndex = 27;
+            // 
+            // lblPalabras
+            // 
+            this.lblPalabras.Location = new System.Drawing.Point(291, 303);
+            this.lblPalabras.Name = "lblPalabras";
+            this.lblPalabras.Size = new System.Drawing.Size(150, 25);
+            this.lblPalabras.StateCommon.LongText.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPalabras.StateCommon.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPalabras.TabIndex = 26;
+            this.lblPalabras.Values.Text = "Palabras clave";
+            // 
+            // btnAddPalabras
+            // 
+            this.btnAddPalabras.Location = new System.Drawing.Point(291, 360);
+            this.btnAddPalabras.Name = "btnAddPalabras";
+            this.btnAddPalabras.Size = new System.Drawing.Size(162, 37);
+            this.btnAddPalabras.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPalabras.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddPalabras.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddPalabras.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddPalabras.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnAddPalabras.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddPalabras.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAddPalabras.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAddPalabras.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPalabras.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddPalabras.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddPalabras.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddPalabras.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnAddPalabras.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddPalabras.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPalabras.TabIndex = 28;
+            this.btnAddPalabras.Values.Text = "Agregar Palabras";
+            this.btnAddPalabras.Click += new System.EventHandler(this.btnAddPalabras_Click);
+            // 
             // frmAñadirMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 500);
+            this.Controls.Add(this.btnAddPalabras);
+            this.Controls.Add(this.cmbPalabras);
+            this.Controls.Add(this.lblPalabras);
+            this.Controls.Add(this.lblEtiqueta);
+            this.Controls.Add(this.chkISBN);
+            this.Controls.Add(this.chkISSN);
+            this.Controls.Add(this.chkDOI);
             this.Controls.Add(this.txtConfirmacion);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbColeccion);
@@ -352,6 +451,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPortada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFormato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbColeccion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPalabras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,5 +477,12 @@
         private Krypton.Toolkit.KryptonComboBox cmbColeccion;
         private Krypton.Toolkit.KryptonTextBox txtConfirmacion;
         private Krypton.Toolkit.KryptonButton btnAgregar;
+        private Krypton.Toolkit.KryptonCheckBox chkDOI;
+        private Krypton.Toolkit.KryptonCheckBox chkISSN;
+        private Krypton.Toolkit.KryptonCheckBox chkISBN;
+        private Krypton.Toolkit.KryptonLabel lblEtiqueta;
+        private Krypton.Toolkit.KryptonComboBox cmbPalabras;
+        private Krypton.Toolkit.KryptonLabel lblPalabras;
+        private Krypton.Toolkit.KryptonButton btnAddPalabras;
     }
 }

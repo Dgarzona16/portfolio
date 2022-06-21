@@ -122,6 +122,35 @@ namespace project.FORMS
             }
         }
         //
+        //agregar palabras clave
+        //
+        private void btnAddPalabras_Click(object sender, EventArgs e)
+        {
+            cmbPalabras.Items.Add(cmbPalabras.Text);
+            cmbPalabras.Text = "";
+        }
+        //
+        //pasar etiquetas
+        //
+        private void passTag(int id)
+        {
+            if (chkISBN.Checked)
+            {
+                writer.InsertEtiqueta(id, chkISBN.Text);
+                chkISBN.Checked = false;
+            }
+            if (chkISSN.Checked)
+            {
+                writer.InsertEtiqueta(id, chkISSN.Text);
+                chkISSN.Checked = false;
+            }
+            if (chkDOI.Checked)
+            {
+                writer.InsertEtiqueta(id, chkDOI.Text);
+                chkDOI.Checked = false;
+            }
+        }
+        //
         //Enviar a DB
         //
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -161,6 +190,18 @@ namespace project.FORMS
                 if (writer.Insert(@material))
                 {
                     MessageBox.Show($"{User_cache.Username} a agregado {txtNombre.Text} correctamente");
+                    var id = writer.getId(@material);
+                    passTag(id);
+                    foreach (string palabra in cmbPalabras.Items)
+                    {
+                        writer.InsertPalabra(id, palabra);
+                    }
+                    txtNombre.Clear();
+                    txtAutor.Clear();
+                    txtEditorial.Clear();
+                    txtConfirmacion.Clear();
+                    cmbPalabras.Items.Clear();
+                    picPortada.Image = null;
                 }
                 else
                 {

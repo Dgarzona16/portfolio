@@ -61,3 +61,5 @@ C:\Users\DanielGarzona\OneDrive\Documents\#POO\project-oop-db\OOP\project\projec
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\project-oop-db\OOP\project\project\obj\Debug\project.csproj.CopyComplete
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\project-oop-db\OOP\project\project\obj\Debug\project.exe
 C:\Users\DanielGarzona\OneDrive\Documents\#POO\project-oop-db\OOP\project\project\obj\Debug\project.pdb
+C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\bin\Debug\Zen.Barcode.Core.dll
+C:\Users\fcp\OneDrive\Documents\repo\project-oop-db\OOP\project\project\obj\Debug\project.FORMS.frmAñadirReserva.resources

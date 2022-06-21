@@ -246,6 +246,22 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
+        public int getId(NewMaterial MaterialData)
+        {
+            int id = 0;
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"SELECT Id FROM MATERIAL WHERE Nombre = '{MaterialData.Nombre}' AND Id_Coleccion = '{MaterialData.Id_Coleccion}' AND Id_Formato = '{MaterialData.Id_Formato}'";
+                    command.CommandType = CommandType.Text;
+                    id = (int)command.ExecuteScalar();
+                }
+            }
+            return id;
+        }
         DataTable SQLReaderWriter.consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
@@ -300,6 +316,34 @@ namespace project.CONNECT_SQL
                     {
                         return false;
                     }
+                }
+            }
+        }
+        public void InsertEtiqueta(int id, string etiqueta)
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO ETIQUETA (Id_Material, Codigo) VALUES ('{id}', '{etiqueta}')";
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        public void InsertPalabra(int id, string palabra)
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO PALABRAS (Id_Material, Palabra) VALUES ('{id}', '{palabra}')";
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
                 }
             }
         }
