@@ -43,6 +43,7 @@
             this.dtpHoraReserva = new Krypton.Toolkit.KryptonDateTimePicker();
             this.lblFechaReserva = new Krypton.Toolkit.KryptonLabel();
             this.dtpFechaReserva = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.btnValidar = new Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
             // txtIdMaterial
@@ -145,6 +146,7 @@
             this.btnAgregar.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.TabIndex = 21;
             this.btnAgregar.Values.Text = "Agregar Prestamo";
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dtpHoraPrestamo
             // 
@@ -251,11 +253,40 @@
             this.dtpFechaReserva.ValueNullable = new System.DateTime(2022, 6, 3, 21, 13, 4, 0);
             this.dtpFechaReserva.Visible = false;
             // 
+            // btnValidar
+            // 
+            this.btnValidar.Location = new System.Drawing.Point(660, 408);
+            this.btnValidar.Name = "btnValidar";
+            this.btnValidar.Size = new System.Drawing.Size(162, 37);
+            this.btnValidar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValidar.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnValidar.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnValidar.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnValidar.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnValidar.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnValidar.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnValidar.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnValidar.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Fira Code", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValidar.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnValidar.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnValidar.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnValidar.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
+            this.btnValidar.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnValidar.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Fira Code Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValidar.TabIndex = 32;
+            this.btnValidar.Values.Text = "validar Prestamo";
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
+            // 
             // frmAñadirReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 500);
+            this.Controls.Add(this.btnValidar);
             this.Controls.Add(this.dtpHoraReserva);
             this.Controls.Add(this.lblFechaReserva);
             this.Controls.Add(this.dtpFechaReserva);
@@ -296,5 +327,6 @@
         private Krypton.Toolkit.KryptonDateTimePicker dtpHoraReserva;
         private Krypton.Toolkit.KryptonLabel lblFechaReserva;
         private Krypton.Toolkit.KryptonDateTimePicker dtpFechaReserva;
+        private Krypton.Toolkit.KryptonButton btnValidar;
     }
 }

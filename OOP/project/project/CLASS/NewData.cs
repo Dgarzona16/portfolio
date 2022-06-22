@@ -51,12 +51,13 @@ namespace project.CLASS
     //
     //Objeto de Reserva
     //
-    public class NewReservation//modificar
+    public class NewReservation
     {
-        public int Id_Evento;
+        public int Id_Material;
         public int Id_Usuario;
-        public string FechaHora_Inicio;
-        public string FechaHora_Fin;
+        public string FechaHora_Prestamo;
+        public string FechaHora_Devolucion;
+        public string FechaHora_Reserva;
 
         public NewReservation() { }
     }
