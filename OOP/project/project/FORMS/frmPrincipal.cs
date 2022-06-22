@@ -417,6 +417,7 @@ namespace project.FORMS
         }
         private void btnAñadirReserva_Click(object sender, EventArgs e)
         {
+            loadForm(new frmAñadirReserva());
             btnBuscarReserva.BackColor = Color.FromArgb(32, 83, 117);
             btnAñadirReserva.BackColor = Color.FromArgb(25, 58, 79);
             btnEliminarReserva.BackColor = Color.FromArgb(32, 83, 117);
