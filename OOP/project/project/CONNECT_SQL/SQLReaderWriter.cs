@@ -384,7 +384,26 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
-        bool Insert(NewEvent EventData)//modificar
+        public bool validBorrow(int idMaterial, string fechaA, string fechaB)
+        {
+            bool existent = true;
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"SELECT * FROM PRESTAMO WHERE Id_Material = '{idMaterial}' AND FechaHora_Prestamo BETWEEN CAST('{fechaA}' AS DATETIME) AND CAST('{fechaB}' AS DATETIME)";
+                    command.CommandType = CommandType.Text;
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        existent = false;
+                    }
+                }
+            }
+            return existent;
+        }
+        public bool InsertPrestamo(NewReservation ReserveData)
         {
             using (var connection = getConnection())
             {
@@ -392,7 +411,28 @@ namespace project.CONNECT_SQL
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"INSERT INTO EVENTO (Titulo, FechaHora_Inicio, FechaHora_Fin, CantidadParticipantes, Id_Area) VALUES ('{EventData.Titulo}', '{EventData.FechaHora_Inicio}', '{EventData.FechaHora_Fin}', '{EventData.CantidadParticipantes}', '{EventData.Id_Area}')";
+                    command.CommandText = $"INSERT INTO PRESTAMO (Id_Usuario, Id_Material, FechaHora_Prestamo, FechaHora_Devolucion) VALUES ('{ReserveData.Id_Usuario}', '{ReserveData.Id_Material}', CONVERT(date,'{ReserveData.FechaHora_Prestamo}'), CONVERT(date,'{ReserveData.FechaHora_Devolucion}'))";
+                    command.CommandType = CommandType.Text;
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+        public bool InsertReserva(NewReservation ReserveData)
+        {
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"INSERT INTO PRESTAMO (Id_Usuario, Id_Material, FechaHora_Reserva, FechaHora_Prestamo, FechaHora_Devolucion) VALUES ('{ReserveData.Id_Usuario}', '{ReserveData.Id_Material}',CONVERT(datetime,'{ReserveData.FechaHora_Reserva}' CONVERT(datetime,'{ReserveData.FechaHora_Prestamo}'), CONVERT(datetime,'{ReserveData.FechaHora_Devolucion}'))";
                     command.CommandType = CommandType.Text;
                     if (command.ExecuteNonQuery() > 0)
                     {
