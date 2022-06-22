@@ -62,6 +62,8 @@
             this.txtIdMaterial.StateCommon.Content.Font = new System.Drawing.Font("Fira Code Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdMaterial.TabIndex = 6;
             this.txtIdMaterial.Text = "Id del Material";
+            this.txtIdMaterial.Enter += new System.EventHandler(this.txtIdMaterial_Enter);
+            this.txtIdMaterial.Leave += new System.EventHandler(this.txtIdMaterial_Leave);
             // 
             // lblIdMaterial
             // 
@@ -91,6 +93,8 @@
             this.txtIdUsuario.StateCommon.Content.Font = new System.Drawing.Font("Fira Code Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdUsuario.TabIndex = 8;
             this.txtIdUsuario.Text = "Id del Usuario";
+            this.txtIdUsuario.Enter += new System.EventHandler(this.txtIdUsuario_Enter);
+            this.txtIdUsuario.Leave += new System.EventHandler(this.txtIdUsuario_Leave);
             // 
             // lblIdUsuario
             // 
