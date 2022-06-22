@@ -58,6 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLASS\BButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CLASS\FormTemplate.cs" />
     <Compile Include="CLASS\NewData.cs" />
     <Compile Include="CLASS\User_cache.cs" />
@@ -203,6 +206,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BINAES %28logo%29 - POO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBGW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBG.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

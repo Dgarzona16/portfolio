@@ -19,24 +19,8 @@ namespace project.FORMS
         {
             InitializeComponent();
         }
-        private void btnIngresar_Click(object sender, EventArgs e)
-        {
-            CheckAdmin checkAdmin = new CheckAdmin();
-            if (checkAdmin.Login(txtUsuario.Text, txtContraseña.Text))
-            {
-                User_cache.GetAdmin(txtUsuario.Text, txtContraseña.Text);
-                frmPrincipal principal = new frmPrincipal();
-                principal.Show();
-                principal.FormClosed += LogOut;
-                this.Hide();
-            }
-            else
-            {
-                lblError.Text = "Usuario o contraseña incorrectos";
-                txtContraseña.Clear();
-                txtUsuario.Focus();
-            }
-        }
+        
+
 
         private void LogOut(object sender, EventArgs e)
         {
@@ -45,6 +29,8 @@ namespace project.FORMS
             lblError.Text = "";
             this.Show();
             txtUsuario.Focus();
+            txtContraseña.Text = "Introduzca su Contraseña";
+            txtContraseña.UseSystemPasswordChar = false;
         }
         //
         //PLACEHOLDER
@@ -86,5 +72,32 @@ namespace project.FORMS
                 txtContraseña.UseSystemPasswordChar = false;
             }
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            CheckAdmin checkAdmin = new CheckAdmin();
+            if (checkAdmin.Login(txtUsuario.Text, txtContraseña.Text))
+            {
+                User_cache.GetAdmin(txtUsuario.Text, txtContraseña.Text);
+                frmPrincipal principal = new frmPrincipal();
+                principal.Show();
+                principal.FormClosed += LogOut;
+                this.Hide();
+            }
+            else
+            {
+                lblError.Text = "Usuario o contraseña incorrectos";
+                txtContraseña.Clear();
+                txtUsuario.Focus();
+                txtContraseña.Text = "Introduzca su Contraseña";
+                txtContraseña.ForeColor = Color.Silver;
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
+
