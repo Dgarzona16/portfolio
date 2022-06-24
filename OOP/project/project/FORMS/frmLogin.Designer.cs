@@ -80,7 +80,7 @@
             this.lblUsuario.Location = new System.Drawing.Point(25, 79);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(86, 25);
+            this.lblUsuario.Size = new System.Drawing.Size(71, 20);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -89,7 +89,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(25, 111);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(292, 31);
+            this.txtUsuario.Size = new System.Drawing.Size(292, 26);
             this.txtUsuario.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtUsuario.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtUsuario.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -120,7 +120,7 @@
             this.lblContrasena.Location = new System.Drawing.Point(25, 170);
             this.lblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(124, 25);
+            this.lblContrasena.Size = new System.Drawing.Size(102, 20);
             this.lblContrasena.TabIndex = 2;
             this.lblContrasena.Text = "Contraseña";
             // 
@@ -129,7 +129,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(25, 201);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(292, 31);
+            this.txtContraseña.Size = new System.Drawing.Size(292, 26);
             this.txtContraseña.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtContraseña.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtContraseña.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -169,8 +169,8 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.DarkGray;
-            this.btnSalir.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.btnSalir.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSalir.BackgroundColor = System.Drawing.Color.LightCoral;
             this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalir.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnSalir.BorderRadius = 20;
@@ -191,8 +191,8 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.DarkGray;
-            this.btnIngresar.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.btnIngresar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnIngresar.BackgroundColor = System.Drawing.Color.SkyBlue;
             this.btnIngresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIngresar.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnIngresar.BorderRadius = 20;
@@ -238,13 +238,13 @@
             this.lblError.AutoSize = true;
             this.lblError.Location = new System.Drawing.Point(30, 266);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 17);
+            this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 5;
             // 
             // frmLogin
             // 
             this.AccessibleName = "";
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(834, 461);

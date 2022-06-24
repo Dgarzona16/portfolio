@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using project.CONNECT_SQL;
+using project.FORMS;
+using System.Data;
 
 namespace project.CLASS
 {
-    public class FormTemplate
+    public abstract class FormTemplate
     {
         public List<string> CmbItems = new List<string>();
         public SQLReaderWriter consulta;
@@ -15,7 +18,7 @@ namespace project.CLASS
         {
 
         }
-
+        public abstract void RunView(DataTable dt);
     }
 
     public class EventComplement : FormTemplate
@@ -29,9 +32,11 @@ namespace project.CLASS
             CmbItems.Add("Nombre de Evento");
             CmbItems.Add("Area");
             consulta = new EventSQL();
-            //
-            //Añadir
-            //
+        }
+
+        public override void RunView(DataTable dt)
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -46,9 +51,13 @@ namespace project.CLASS
             CmbItems.Add("Tipo de coleccion");
             CmbItems.Add("Genero");
             consulta = new CollectionSQL();
-            //
-            //Añadir
-            //
+        }
+        public override void RunView(DataTable dt)
+        {
+            using (var view = new frmViewCarnet(dt))
+            {
+                view.ShowDialog();
+            }
         }
     }
 
@@ -64,9 +73,13 @@ namespace project.CLASS
             CmbItems.Add("Autor");
             CmbItems.Add("Formato");
             consulta = new MaterialSQL();
-            //  
-            //Añadir
-            //
+        }
+        public override void RunView(DataTable dt)
+        {
+            using (var view = new frmViewCarnet(dt))
+            {
+                view.ShowDialog();
+            }
         }
     }
 
@@ -78,11 +91,15 @@ namespace project.CLASS
             //Buscar
             //
             CmbItems.Add("Reserva / Usuario");
-            CmbItems.Add("Prestamo / Usuaraio");
+            CmbItems.Add("Prestamo / Usuario");
             consulta = new ReserveSQL();
-            //
-            //Añadir
-            //
+        }
+        public override void RunView(DataTable dt)
+        {
+            using (var view = new frmViewCarnet(dt))
+            {
+                view.ShowDialog();
+            }
         }
     }
 
@@ -96,9 +113,13 @@ namespace project.CLASS
             CmbItems.Add("Nombre");
             CmbItems.Add("Ocupacion");
             consulta = new UserSQL();
-            //
-            //Añadir
-            //
+        }
+        public override void RunView(DataTable dt)
+        {
+            using (var view = new frmViewCarnet(dt))
+            {
+                view.ShowDialog();
+            }
         }
     }
 }

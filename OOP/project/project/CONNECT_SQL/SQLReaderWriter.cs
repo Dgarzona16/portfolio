@@ -15,6 +15,7 @@ namespace project.CONNECT_SQL
     public interface SQLReaderWriter
     {
         DataTable consult(string a, string b);
+        DataTable GetData(int id);
     }
     //
     //Evento
@@ -121,6 +122,11 @@ namespace project.CONNECT_SQL
                 }
             }       
         }
+
+        public DataTable GetData(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
     //
     //Coleccion
@@ -200,6 +206,10 @@ namespace project.CONNECT_SQL
                     }
                 }
             }
+        }
+        public DataTable GetData(int id)
+        {
+            throw new NotImplementedException();
         }
     }
     //
@@ -347,6 +357,10 @@ namespace project.CONNECT_SQL
                 }
             }
         }
+        public DataTable GetData(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
     //
     //Reserva
@@ -373,7 +387,7 @@ namespace project.CONNECT_SQL
                     }
                     if (colunm == "Prestamo / Usuario")
                     {
-                        command.CommandText = $"SELECT USUAIO.Nombre AS 'Usuario', PRESTAMO.FechaHora_Prestamo AS 'Fecha Prestamo', PRESTAMO.FechaHora_Devolucion AS 'Fecha devolucion', MATERIAL.Nombre AS 'Objeto prestado'FROM PRESTAMO INNER JOIN USUARIO ON PRESTAMO.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON PRESTAMO.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
+                        command.CommandText = $"SELECT USUARIO.Nombre AS 'Usuario', PRESTAMO.FechaHora_Prestamo AS 'Fecha Prestamo', PRESTAMO.FechaHora_Devolucion AS 'Fecha devolucion', MATERIAL.Nombre AS 'Objeto prestado'FROM PRESTAMO INNER JOIN USUARIO ON PRESTAMO.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON PRESTAMO.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
                     }
 
                     command.CommandType = CommandType.Text;
@@ -393,11 +407,12 @@ namespace project.CONNECT_SQL
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"SELECT * FROM PRESTAMO WHERE Id_Material = '{idMaterial}' AND FechaHora_Prestamo BETWEEN CAST('{fechaA}' AS DATETIME) AND CAST('{fechaB}' AS DATETIME)";
+                    command.CommandText = $"SELECT id FROM PRESTAMO WHERE Id_Material = {idMaterial} AND FechaHora_Prestamo BETWEEN CAST('{fechaA}' AS DATETIME) AND CAST('{fechaB}' AS DATETIME)";
                     command.CommandType = CommandType.Text;
-                    if (command.ExecuteNonQuery() > 0)
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
                     {
-                        existent = false;
+                        return false;
                     }
                 }
             }
@@ -411,7 +426,7 @@ namespace project.CONNECT_SQL
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"INSERT INTO PRESTAMO (Id_Usuario, Id_Material, FechaHora_Prestamo, FechaHora_Devolucion) VALUES ('{ReserveData.Id_Usuario}', '{ReserveData.Id_Material}', CONVERT(date,'{ReserveData.FechaHora_Prestamo}'), CONVERT(date,'{ReserveData.FechaHora_Devolucion}'))";
+                    command.CommandText = $"INSERT INTO PRESTAMO (Id_Usuario, Id_Material, FechaHora_Prestamo, FechaHora_Devolucion) VALUES ('{ReserveData.Id_Usuario}', '{ReserveData.Id_Material}', CONVERT(datetime,'{ReserveData.FechaHora_Prestamo}'), CONVERT(datetime,'{ReserveData.FechaHora_Devolucion}'))";
                     command.CommandType = CommandType.Text;
                     if (command.ExecuteNonQuery() > 0)
                     {
@@ -432,7 +447,7 @@ namespace project.CONNECT_SQL
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = $"INSERT INTO PRESTAMO (Id_Usuario, Id_Material, FechaHora_Reserva, FechaHora_Prestamo, FechaHora_Devolucion) VALUES ('{ReserveData.Id_Usuario}', '{ReserveData.Id_Material}',CONVERT(datetime,'{ReserveData.FechaHora_Reserva}' CONVERT(datetime,'{ReserveData.FechaHora_Prestamo}'), CONVERT(datetime,'{ReserveData.FechaHora_Devolucion}'))";
+                    command.CommandText = $"INSERT INTO RESERVA (Id_Usuario, Id_Material, FechaHora_Reserva, FechaHora_Prestamo, FechaHora_Devolucion) VALUES ({ReserveData.Id_Usuario}, {ReserveData.Id_Material},CONVERT(datetime,'{ReserveData.FechaHora_Reserva}'), CONVERT(datetime,'{ReserveData.FechaHora_Prestamo}'), CONVERT(datetime,'{ReserveData.FechaHora_Devolucion}'))";
                     command.CommandType = CommandType.Text;
                     if (command.ExecuteNonQuery() > 0)
                     {
@@ -444,6 +459,10 @@ namespace project.CONNECT_SQL
                     }
                 }
             }
+        }
+        public DataTable GetData(int id)
+        {
+            throw new NotImplementedException();
         }
     }
     //
@@ -482,6 +501,25 @@ namespace project.CONNECT_SQL
             }
             return dt;
         }
+
+        public DataTable GetData(int id)
+        {
+            DataTable dt = new DataTable();
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"SELECT Id, Nombre, Direccion, Institucion, Telefono, Correo, Ocupacion, Fotografia FROM USUARIO WHERE Id = {id}";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    adapter.SelectCommand = command;
+                    adapter.Fill(dt);
+                }
+            }
+            return dt;
+        }
         public bool Insert(NewUser UserData)
         {
             using (var connection = getConnection())
@@ -505,6 +543,3 @@ namespace project.CONNECT_SQL
         }
     }
 }
-
-
-

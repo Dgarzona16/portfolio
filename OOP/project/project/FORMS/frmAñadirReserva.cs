@@ -55,6 +55,24 @@ namespace project.FORMS
                 lblIdUsuario.Visible = false;
             }
         }
+        private void txtConfirmacion_Enter(object sender, EventArgs e)
+        {
+            if (txtConfirmacion.Text == "Confirmar contraseña")
+            {
+                txtConfirmacion.Text = "";
+                txtConfirmacion.UseSystemPasswordChar = true;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.Black;
+            }
+        }
+        private void txtConfirmacion_Leave(object sender, EventArgs e)
+        {
+            if (txtConfirmacion.Text == "")
+            {
+                txtConfirmacion.Text = "Confirmar contraseña";
+                txtConfirmacion.StateCommon.Content.Color1 = Color.Gray;
+                txtConfirmacion.UseSystemPasswordChar = false;
+            }
+        }
         //
         //Verificar prestamo o reserva
         //
@@ -89,6 +107,7 @@ namespace project.FORMS
                 @reserve.Id_Usuario = Convert.ToInt32(txtIdUsuario.Text);
                 @reserve.FechaHora_Prestamo = dtpFechaPrestamo.Text + " " + dtpHoraPrestamo.Text;
                 @reserve.FechaHora_Devolucion = dtpFechaDevolucion.Text + " " + dtpHoraDevolucion.Text;
+                @reserve.FechaHora_Reserva = dtpFechaReserva.Text + " " + dtpHoraReserva.Text;
 
                 if (prestamo)
                 {
@@ -112,6 +131,11 @@ namespace project.FORMS
                         MessageBox.Show("Error al agregar reserva");
                     }
                 }
+                txtConfirmacion.Clear();
+                txtIdMaterial.Clear();
+                txtIdUsuario.Clear();
+                dtpFechaReserva.Visible = false;
+                dtpHoraReserva.Visible = false;
             }
         }
     }
