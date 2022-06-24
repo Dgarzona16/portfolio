@@ -85,7 +85,7 @@
             // 
             // dtpFecha_Init
             // 
-            this.dtpFecha_Init.CustomFormat = "dd-MM-yyyy";
+            this.dtpFecha_Init.CustomFormat = "yyyy-MM-dd";
             this.dtpFecha_Init.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha_Init.Location = new System.Drawing.Point(12, 157);
             this.dtpFecha_Init.Name = "dtpFecha_Init";
@@ -129,7 +129,7 @@
             // 
             // dtpFecha_Fin
             // 
-            this.dtpFecha_Fin.CustomFormat = "dd-MM-yyyy";
+            this.dtpFecha_Fin.CustomFormat = "yyyy-MM-dd";
             this.dtpFecha_Fin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha_Fin.Location = new System.Drawing.Point(12, 245);
             this.dtpFecha_Fin.Name = "dtpFecha_Fin";

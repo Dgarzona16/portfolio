@@ -82,6 +82,7 @@
             this.dtgvResultado.StateNormal.HeaderRow.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.dtgvResultado.StateNormal.HeaderRow.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.dtgvResultado.TabIndex = 2;
+            this.dtgvResultado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvResultado_CellDoubleClick);
             // 
             // frmBuscar
             // 

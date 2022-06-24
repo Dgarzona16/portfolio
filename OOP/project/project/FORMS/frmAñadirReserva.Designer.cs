@@ -119,6 +119,8 @@
             this.txtConfirmacion.StateNormal.Content.Font = new System.Drawing.Font("Fira Code Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.TabIndex = 22;
             this.txtConfirmacion.Text = "Confirmar contraseña";
+            this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
+            this.txtConfirmacion.Leave += new System.EventHandler(this.txtConfirmacion_Leave);
             // 
             // btnAgregar
             // 
@@ -172,7 +174,7 @@
             // 
             // dtpFechaPrestamo
             // 
-            this.dtpFechaPrestamo.CustomFormat = "dd-MM-yyyy";
+            this.dtpFechaPrestamo.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaPrestamo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaPrestamo.Location = new System.Drawing.Point(425, 194);
             this.dtpFechaPrestamo.Name = "dtpFechaPrestamo";
@@ -206,7 +208,7 @@
             // 
             // dtpFechaDevolucion
             // 
-            this.dtpFechaDevolucion.CustomFormat = "dd-MM-yyyy";
+            this.dtpFechaDevolucion.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaDevolucion.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaDevolucion.Location = new System.Drawing.Point(425, 320);
             this.dtpFechaDevolucion.Name = "dtpFechaDevolucion";
@@ -242,7 +244,7 @@
             // 
             // dtpFechaReserva
             // 
-            this.dtpFechaReserva.CustomFormat = "dd-MM-yyyy";
+            this.dtpFechaReserva.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaReserva.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaReserva.Location = new System.Drawing.Point(425, 86);
             this.dtpFechaReserva.Name = "dtpFechaReserva";
