@@ -115,6 +115,12 @@
     <Compile Include="FORMS\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\frmViewCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmViewCarnet.Designer.cs">
+      <DependentUpon>frmViewCarnet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FORMS\frmAñadirColeccion.resx">
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmViewCarnet.resx">
+      <DependentUpon>frmViewCarnet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
