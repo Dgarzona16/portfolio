@@ -43,7 +43,7 @@ namespace project.FORMS
         }
         private void txtDireccion_Enter(object sender, EventArgs e)
         {
-            if (txtDireccion.Text == "Direccion")
+            if (txtDireccion.Text == "Dirección")
             {
                 txtDireccion.Text = "";
                 lblDireccion.Visible = true;
@@ -53,13 +53,13 @@ namespace project.FORMS
         {
             if (txtDireccion.Text == "")
             {
-                txtDireccion.Text = "Direccion";
+                txtDireccion.Text = "Dirección";
                 lblDireccion.Visible = false;
             }
         }
         private void txtInstitucion_Enter(object sender, EventArgs e)
         {
-            if (txtInstitucion.Text == "Institucion")
+            if (txtInstitucion.Text == "Institución")
             {
                 txtInstitucion.Text = "";
                 lblInstitucion.Visible = true;
@@ -69,13 +69,13 @@ namespace project.FORMS
         {
             if (txtInstitucion.Text == "")
             {
-                txtInstitucion.Text = "Institucion";
+                txtInstitucion.Text = "Institución";
                 lblInstitucion.Visible = false;
             }
         }
         private void txtTelefono_Enter(object sender, EventArgs e)
         {
-            if (txtTelefono.Text == "Telefono")
+            if (txtTelefono.Text == "Teléfono")
             {
                 txtTelefono.Text = "";
                 lblTelefono.Visible = true;
@@ -85,13 +85,13 @@ namespace project.FORMS
         {
             if (txtTelefono.Text == "")
             {
-                txtTelefono.Text = "Telefono";
+                txtTelefono.Text = "Teléfono";
                 lblTelefono.Visible = false;
             }
         }
         private void txtCorreo_Enter(object sender, EventArgs e)
         {
-            if (txtCorreo.Text == "Correo electronico")
+            if (txtCorreo.Text == "Correo electrónico")
             {
                 txtCorreo.Text = "";
                 lblCorreo.Visible = true;
@@ -101,13 +101,13 @@ namespace project.FORMS
         {
             if (txtCorreo.Text == "")
             {
-                txtCorreo.Text = "Correo electronico";
+                txtCorreo.Text = "Correo electrónico";
                 lblCorreo.Visible = false;
             }
         }
         private void txtOcupacion_Enter(object sender, EventArgs e)
         {
-            if (txtOcupacion.Text == "Ocupacion")
+            if (txtOcupacion.Text == "Ocupación")
             {
                 txtOcupacion.Text = "";
                 lblOcupacion.Visible = true;
@@ -117,7 +117,7 @@ namespace project.FORMS
         {
             if (txtOcupacion.Text == "")
             {
-                txtOcupacion.Text = "Ocupacion";
+                txtOcupacion.Text = "Ocupación";
                 lblOcupacion.Visible = false;
             }
         }
@@ -126,7 +126,7 @@ namespace project.FORMS
             if (txtConfirmacion.Text == "Confirmar contraseña")
             {
                 txtConfirmacion.Text = "";
-                txtConfirmacion.StateCommon.Content.Color1 = Color.Black;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.FromArgb(6, 29, 63);
                 txtConfirmacion.UseSystemPasswordChar = true;
             }
         }
@@ -135,14 +135,14 @@ namespace project.FORMS
             if (txtConfirmacion.Text == "")
             {
                 txtConfirmacion.Text = "Confirmar contraseña";
-                txtConfirmacion.StateCommon.Content.Color1 = Color.Gray;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.FromArgb(6, 29, 63);
                 txtConfirmacion.UseSystemPasswordChar = false;
             }
         }
         //
         //Agregar foto
         //
-        private void btnAgregarFotografia_Click(object sender, EventArgs e)
+        private void btnAgregarFotografia_Click_1(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -159,7 +159,7 @@ namespace project.FORMS
         //
         //Enviar a DB
         //
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnAgregar_Click_1(object sender, EventArgs e)
         {
             NewUser @user = new NewUser();
             

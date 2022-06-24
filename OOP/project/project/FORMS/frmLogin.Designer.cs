@@ -41,6 +41,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblError = new System.Windows.Forms.Label();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.lblInicioSesion = new System.Windows.Forms.Label();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -76,17 +78,18 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(25, 79);
+            this.lblUsuario.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.lblUsuario.Location = new System.Drawing.Point(33, 166);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(86, 25);
+            this.lblUsuario.Size = new System.Drawing.Size(95, 36);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(25, 111);
+            this.txtUsuario.Location = new System.Drawing.Point(33, 198);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(292, 31);
@@ -116,17 +119,18 @@
             // lblContrasena
             // 
             this.lblContrasena.AutoSize = true;
-            this.lblContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasena.Location = new System.Drawing.Point(25, 170);
+            this.lblContrasena.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContrasena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.lblContrasena.Location = new System.Drawing.Point(33, 257);
             this.lblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(124, 25);
+            this.lblContrasena.Size = new System.Drawing.Size(137, 36);
             this.lblContrasena.TabIndex = 2;
             this.lblContrasena.Text = "Contraseña";
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(25, 201);
+            this.txtContraseña.Location = new System.Drawing.Point(33, 288);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(292, 31);
@@ -155,8 +159,10 @@
             // 
             // pnlLogin
             // 
-            this.pnlLogin.BackgroundImage = global::project.Properties.Resources.LoginBGW;
+            this.pnlLogin.BackgroundImage = global::project.Properties.Resources.LoginBGGold;
             this.pnlLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlLogin.Controls.Add(this.lblInicioSesion);
+            this.pnlLogin.Controls.Add(this.lblBienvenido);
             this.pnlLogin.Controls.Add(this.btnSalir);
             this.pnlLogin.Controls.Add(this.btnIngresar);
             this.pnlLogin.Controls.Add(this.pictureBox1);
@@ -169,21 +175,22 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.DarkGray;
-            this.btnSalir.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.btnSalir.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalir.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnSalir.BorderRadius = 20;
             this.btnSalir.BorderSize = 0;
             this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Font = new System.Drawing.Font("Nunito ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(181, 314);
+            this.btnSalir.Location = new System.Drawing.Point(189, 387);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(136, 48);
+            this.btnSalir.Size = new System.Drawing.Size(136, 52);
             this.btnSalir.TabIndex = 9;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = " Salir";
             this.btnSalir.TextColor = System.Drawing.Color.White;
             this.btnSalir.UseMnemonic = false;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -191,19 +198,20 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.DarkGray;
-            this.btnIngresar.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.btnIngresar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.btnIngresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIngresar.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnIngresar.BorderRadius = 20;
             this.btnIngresar.BorderSize = 0;
             this.btnIngresar.FlatAppearance.BorderSize = 0;
+            this.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Olive;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Font = new System.Drawing.Font("Nunito ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
-            this.btnIngresar.Location = new System.Drawing.Point(24, 314);
+            this.btnIngresar.Location = new System.Drawing.Point(32, 387);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(137, 48);
+            this.btnIngresar.Size = new System.Drawing.Size(137, 52);
             this.btnIngresar.TabIndex = 8;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextColor = System.Drawing.Color.White;
@@ -213,10 +221,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::project.Properties.Resources.LogoES;
-            this.pictureBox1.Location = new System.Drawing.Point(515, 49);
+            this.pictureBox1.Image = global::project.Properties.Resources.LogoESGold;
+            this.pictureBox1.Location = new System.Drawing.Point(493, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 125);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 153);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -224,11 +232,11 @@
             // picLogo
             // 
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.Image = global::project.Properties.Resources.BINAES__logo____POO;
-            this.picLogo.Location = new System.Drawing.Point(467, 201);
+            this.picLogo.Image = global::project.Properties.Resources.BINAESLogoGold;
+            this.picLogo.Location = new System.Drawing.Point(450, 201);
             this.picLogo.Margin = new System.Windows.Forms.Padding(4);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(269, 180);
+            this.picLogo.Size = new System.Drawing.Size(297, 200);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 5;
             this.picLogo.TabStop = false;
@@ -236,10 +244,32 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(30, 266);
+            this.lblError.Location = new System.Drawing.Point(38, 339);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 17);
             this.lblError.TabIndex = 5;
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.lblBienvenido.Location = new System.Drawing.Point(88, 36);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(212, 50);
+            this.lblBienvenido.TabIndex = 10;
+            this.lblBienvenido.Text = "¡BIENVENIDO!";
+            // 
+            // lblInicioSesion
+            // 
+            this.lblInicioSesion.AutoSize = true;
+            this.lblInicioSesion.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.lblInicioSesion.Location = new System.Drawing.Point(104, 87);
+            this.lblInicioSesion.Name = "lblInicioSesion";
+            this.lblInicioSesion.Size = new System.Drawing.Size(174, 36);
+            this.lblInicioSesion.TabIndex = 11;
+            this.lblInicioSesion.Text = "Inicio De Sesión";
             // 
             // frmLogin
             // 
@@ -256,7 +286,7 @@
             this.Controls.Add(this.pnlLogin);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
@@ -285,5 +315,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private CLASS.BButtons btnSalir;
         private CLASS.BButtons btnIngresar;
+        private System.Windows.Forms.Label lblBienvenido;
+        private System.Windows.Forms.Label lblInicioSesion;
     }
 }

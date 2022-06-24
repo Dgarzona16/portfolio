@@ -73,6 +73,16 @@ namespace project.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BINAESLogoGold {
+            get {
+                object obj = ResourceManager.GetObject("BINAESLogoGold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ButtonBG {
             get {
                 object obj = ResourceManager.GetObject("ButtonBG", resourceCulture);
@@ -143,6 +153,16 @@ namespace project.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoginBGGold {
+            get {
+                object obj = ResourceManager.GetObject("LoginBGGold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoginBGW {
             get {
                 object obj = ResourceManager.GetObject("LoginBGW", resourceCulture);
@@ -156,6 +176,16 @@ namespace project.Properties {
         internal static System.Drawing.Bitmap LogoES {
             get {
                 object obj = ResourceManager.GetObject("LogoES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoESGold {
+            get {
+                object obj = ResourceManager.GetObject("LogoESGold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +223,46 @@ namespace project.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PrincipalBGW {
+            get {
+                object obj = ResourceManager.GetObject("PrincipalBGW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PrincipalBGW1 {
+            get {
+                object obj = ResourceManager.GetObject("PrincipalBGW1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PrincipalBGY {
+            get {
+                object obj = ResourceManager.GetObject("PrincipalBGY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PrincipalBGYP {
+            get {
+                object obj = ResourceManager.GetObject("PrincipalBGYP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reject {
             get {
                 object obj = ResourceManager.GetObject("reject", resourceCulture);
@@ -216,6 +286,16 @@ namespace project.Properties {
         internal static System.Drawing.Bitmap user_white {
             get {
                 object obj = ResourceManager.GetObject("user_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UserGoldIcon {
+            get {
+                object obj = ResourceManager.GetObject("UserGoldIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

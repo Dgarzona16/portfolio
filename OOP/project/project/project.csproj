@@ -219,5 +219,29 @@
   <ItemGroup>
     <None Include="Resources\ButtonBG.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BINAESLogoGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoESGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBGGold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGW1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGYP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGoldIcon.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
