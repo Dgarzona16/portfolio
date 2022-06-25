@@ -107,7 +107,7 @@ namespace project.FORMS
         //
         //Agregar foto
         //
-        private void btnAgregarPortada_Click(object sender, EventArgs e)
+        private void btnAgregarPortada_Click_1(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -124,7 +124,7 @@ namespace project.FORMS
         //
         //agregar palabras clave
         //
-        private void btnAddPalabras_Click(object sender, EventArgs e)
+        private void btnAddPalabras_Click_1(object sender, EventArgs e)
         {
             cmbPalabras.Items.Add(cmbPalabras.Text);
             cmbPalabras.Text = "";
@@ -153,7 +153,7 @@ namespace project.FORMS
         //
         //Enviar a DB
         //
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnAgregar_Click_1(object sender, EventArgs e)
         {
             NewMaterial @material = new NewMaterial();
             int idFormato = 0;
