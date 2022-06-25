@@ -83,7 +83,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(18, 289);
+            this.txtDireccion.Location = new System.Drawing.Point(18, 324);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(309, 30);
@@ -105,7 +105,7 @@
             // 
             // lblDireccion
             // 
-            this.lblDireccion.Location = new System.Drawing.Point(18, 241);
+            this.lblDireccion.Location = new System.Drawing.Point(18, 276);
             this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(103, 28);
@@ -117,7 +117,7 @@
             // 
             // txtInstitucion
             // 
-            this.txtInstitucion.Location = new System.Drawing.Point(18, 535);
+            this.txtInstitucion.Location = new System.Drawing.Point(18, 564);
             this.txtInstitucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtInstitucion.Name = "txtInstitucion";
             this.txtInstitucion.Size = new System.Drawing.Size(309, 30);
@@ -139,7 +139,7 @@
             // 
             // lblInstitucion
             // 
-            this.lblInstitucion.Location = new System.Drawing.Point(18, 488);
+            this.lblInstitucion.Location = new System.Drawing.Point(18, 517);
             this.lblInstitucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblInstitucion.Name = "lblInstitucion";
             this.lblInstitucion.Size = new System.Drawing.Size(111, 28);
@@ -185,7 +185,7 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(372, 289);
+            this.txtCorreo.Location = new System.Drawing.Point(372, 324);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(309, 30);
@@ -207,7 +207,7 @@
             // 
             // lblCorreo
             // 
-            this.lblCorreo.Location = new System.Drawing.Point(372, 241);
+            this.lblCorreo.Location = new System.Drawing.Point(372, 276);
             this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(188, 28);
@@ -219,7 +219,7 @@
             // 
             // txtOcupacion
             // 
-            this.txtOcupacion.Location = new System.Drawing.Point(372, 539);
+            this.txtOcupacion.Location = new System.Drawing.Point(372, 568);
             this.txtOcupacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtOcupacion.Name = "txtOcupacion";
             this.txtOcupacion.Size = new System.Drawing.Size(309, 30);
@@ -241,7 +241,7 @@
             // 
             // lblOcupacion
             // 
-            this.lblOcupacion.Location = new System.Drawing.Point(372, 491);
+            this.lblOcupacion.Location = new System.Drawing.Point(372, 520);
             this.lblOcupacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblOcupacion.Name = "lblOcupacion";
             this.lblOcupacion.Size = new System.Drawing.Size(115, 28);
@@ -265,10 +265,10 @@
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(426, 700);
+            this.txtConfirmacion.Location = new System.Drawing.Point(831, 569);
             this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtConfirmacion.Name = "txtConfirmacion";
-            this.txtConfirmacion.Size = new System.Drawing.Size(512, 31);
+            this.txtConfirmacion.Size = new System.Drawing.Size(312, 31);
             this.txtConfirmacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtConfirmacion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -277,6 +277,7 @@
             this.txtConfirmacion.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.TabIndex = 22;
             this.txtConfirmacion.Text = "Confirmar contraseña";
+            this.txtConfirmacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
             this.txtConfirmacion.Leave += new System.EventHandler(this.txtConfirmacion_Leave);
             // 
@@ -293,12 +294,12 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregar.Location = new System.Drawing.Point(956, 665);
+            this.btnAgregar.Location = new System.Drawing.Point(857, 609);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(253, 74);
+            this.btnAgregar.Size = new System.Drawing.Size(265, 61);
             this.btnAgregar.TabIndex = 24;
-            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.Text = "AGREGAR USUARIO";
             this.btnAgregar.TextColor = System.Drawing.Color.FloralWhite;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
@@ -316,10 +317,10 @@
             this.btnAgregarFotografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarFotografia.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarFotografia.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregarFotografia.Location = new System.Drawing.Point(834, 400);
+            this.btnAgregarFotografia.Location = new System.Drawing.Point(829, 400);
             this.btnAgregarFotografia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregarFotografia.Name = "btnAgregarFotografia";
-            this.btnAgregarFotografia.Size = new System.Drawing.Size(307, 74);
+            this.btnAgregarFotografia.Size = new System.Drawing.Size(312, 74);
             this.btnAgregarFotografia.TabIndex = 23;
             this.btnAgregarFotografia.Text = "AGREGAR FOTOGRAFÍA";
             this.btnAgregarFotografia.TextColor = System.Drawing.Color.FloralWhite;

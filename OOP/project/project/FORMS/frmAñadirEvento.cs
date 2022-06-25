@@ -54,7 +54,7 @@ namespace project.FORMS
             if (txtConfirmacion.Text == "Confirmar contraseña")
             {
                 txtConfirmacion.Text = "";
-                txtConfirmacion.StateCommon.Content.Color1 = Color.Black;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.FromArgb(6, 29, 63);
                 txtConfirmacion.UseSystemPasswordChar = true;
             }
         }
@@ -63,7 +63,7 @@ namespace project.FORMS
             if (txtConfirmacion.Text == "")
             {
                 txtConfirmacion.Text = "Confirmar contraseña";
-                txtConfirmacion.StateCommon.Content.Color1 = Color.Gray;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.FromArgb(6, 29, 63);
                 txtConfirmacion.UseSystemPasswordChar = false;
             }
         }
