@@ -33,7 +33,7 @@ namespace project.FORMS
         //
         private void txtNombre_Enter(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "Nombre de coleccion")
+            if (txtNombre.Text == "Nombre de colección")
             {
                 txtNombre.Text = "";
                 lblNombre.Visible = true;
@@ -43,13 +43,13 @@ namespace project.FORMS
         {
             if (txtNombre.Text == "")
             {
-                txtNombre.Text = "Nombre de coleccion";
+                txtNombre.Text = "Nombre de colección";
                 lblNombre.Visible = false;
             }
         }
         private void txtTipo_Enter(object sender, EventArgs e)
         {
-            if (txtTipo.Text == "Tipo de coleccion")
+            if (txtTipo.Text == "Tipo de colección")
             {
                 txtTipo.Text = "";
                 lblTipo.Visible = true;
@@ -59,13 +59,13 @@ namespace project.FORMS
         {
             if (txtTipo.Text == "")
             {
-                txtTipo.Text = "Tipo de coleccion";
+                txtTipo.Text = "Tipo de colección";
                 lblTipo.Visible = false;
             }
         }
         private void txtGenero_Enter(object sender, EventArgs e)
         {
-            if (txtGenero.Text == "Genero de coleccion")
+            if (txtGenero.Text == "Género de colección")
             {
                 txtGenero.Text = "";
                 lblGenero.Visible = true;
@@ -75,7 +75,7 @@ namespace project.FORMS
         {
             if (txtGenero.Text == "")
             {
-                txtGenero.Text = "Genero de coleccion";
+                txtGenero.Text = "Género de colección";
                 lblGenero.Visible = false;
             }
         }
@@ -120,7 +120,7 @@ namespace project.FORMS
 
                 if (writer.Insert(@collection))
                 {
-                    MessageBox.Show($"La coleccion {collection.Nombre} a sido agregada correctamente por {User_cache.Username}");
+                    MessageBox.Show($"La colección {collection.Nombre} a sido agregada correctamente por {User_cache.Username}");
                     txtNombre.Clear();
                     txtTipo.Clear();
                     txtGenero.Clear();
@@ -128,7 +128,7 @@ namespace project.FORMS
                 }
                 else
                 {
-                    MessageBox.Show("Error al agregar la coleccion");
+                    MessageBox.Show("¡Error al agregar la colección!");
                 }
             }
         }
