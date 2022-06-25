@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using project.CLASS;
+using project.CONNECT_SQL;
 
 namespace project.FORMS
 {
     public partial class frmAñadirReserva : Form
     {
+        ReserveSQL writer = new ReserveSQL();
+        bool prestamo = true;
         public frmAñadirReserva()
         {
             InitializeComponent();
@@ -49,6 +53,89 @@ namespace project.FORMS
             {
                 txtIdUsuario.Text = "Id del Usuario";
                 lblIdUsuario.Visible = false;
+            }
+        }
+        private void txtConfirmacion_Enter(object sender, EventArgs e)
+        {
+            if (txtConfirmacion.Text == "Confirmar contraseña")
+            {
+                txtConfirmacion.Text = "";
+                txtConfirmacion.UseSystemPasswordChar = true;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.Black;
+            }
+        }
+        private void txtConfirmacion_Leave(object sender, EventArgs e)
+        {
+            if (txtConfirmacion.Text == "")
+            {
+                txtConfirmacion.Text = "Confirmar contraseña";
+                txtConfirmacion.StateCommon.Content.Color1 = Color.Gray;
+                txtConfirmacion.UseSystemPasswordChar = false;
+            }
+        }
+        //
+        //Verificar prestamo o reserva
+        //
+        private void btnValidar_Click(object sender, EventArgs e)
+        {
+            if (writer.validBorrow(Convert.ToInt32(txtIdMaterial.Text),dtpFechaPrestamo.Text + " " + dtpHoraPrestamo.Text, dtpFechaDevolucion.Text + " " + dtpHoraDevolucion.Text))
+            {
+                MessageBox.Show("El material se puede prestar");
+            }
+            else
+            {
+                MessageBox.Show("El material no se puede prestar");
+                lblFechaReserva.Visible = true;
+                dtpFechaReserva.Visible = true;
+                dtpHoraReserva.Visible = true;
+                dtpFechaReserva.Value = DateTime.Now;
+                dtpHoraReserva.Value = DateTime.Now;
+                dtpFechaReserva.Enabled = false;
+                dtpHoraReserva.Enabled = false;
+                prestamo = false;
+            }
+        }
+        //
+        //agregar a DB
+        //
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            NewReservation @reserve = new NewReservation();
+            if (txtConfirmacion.Text == User_cache.Password)
+            {
+                @reserve.Id_Material = Convert.ToInt32(txtIdMaterial.Text);
+                @reserve.Id_Usuario = Convert.ToInt32(txtIdUsuario.Text);
+                @reserve.FechaHora_Prestamo = dtpFechaPrestamo.Text + " " + dtpHoraPrestamo.Text;
+                @reserve.FechaHora_Devolucion = dtpFechaDevolucion.Text + " " + dtpHoraDevolucion.Text;
+                @reserve.FechaHora_Reserva = dtpFechaReserva.Text + " " + dtpHoraReserva.Text;
+
+                if (prestamo)
+                {
+                    if (writer.InsertPrestamo(@reserve))
+                    {
+                        MessageBox.Show("Prestamo agregado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al agregar reserva");
+                    }
+                }
+                else
+                {
+                    if (writer.InsertReserva(@reserve))
+                    {
+                        MessageBox.Show("Reserva agregada");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al agregar reserva");
+                    }
+                }
+                txtConfirmacion.Clear();
+                txtIdMaterial.Clear();
+                txtIdUsuario.Clear();
+                dtpFechaReserva.Visible = false;
+                dtpHoraReserva.Visible = false;
             }
         }
     }
