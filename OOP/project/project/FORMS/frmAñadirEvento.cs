@@ -70,7 +70,7 @@ namespace project.FORMS
         //
         //Agregar foto
         //
-        private void btnAgregarPortada_Click(object sender, EventArgs e)
+        private void btnAgregarPortada_Click_1(object sender, EventArgs e)
         {
             using(OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -87,14 +87,14 @@ namespace project.FORMS
         //
         //Agregar objetivos 
         //
-        private void btnAddObjetivos_Click(object sender, EventArgs e)
+        private void btnAddObjetivos_Click_1(object sender, EventArgs e)
         {
             cmbObjetivos.Items.Add(cmbObjetivos.Text);
         }
         //
         //Enviar a BD
         //
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnAgregar_Click_1(object sender, EventArgs e)
         {
             NewEvent @event = new NewEvent();
             int area = 0;

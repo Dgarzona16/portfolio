@@ -37,7 +37,6 @@
             this.txtEditorial = new Krypton.Toolkit.KryptonTextBox();
             this.lblEditorial = new Krypton.Toolkit.KryptonLabel();
             this.picPortada = new System.Windows.Forms.PictureBox();
-            this.btnAgregarPortada = new Krypton.Toolkit.KryptonButton();
             this.dtpFechaPublicacion = new Krypton.Toolkit.KryptonDateTimePicker();
             this.lblFecha = new Krypton.Toolkit.KryptonLabel();
             this.lblFormato = new Krypton.Toolkit.KryptonLabel();
@@ -45,14 +44,15 @@
             this.cmbFormato = new Krypton.Toolkit.KryptonComboBox();
             this.cmbColeccion = new Krypton.Toolkit.KryptonComboBox();
             this.txtConfirmacion = new Krypton.Toolkit.KryptonTextBox();
-            this.btnAgregar = new Krypton.Toolkit.KryptonButton();
             this.chkDOI = new Krypton.Toolkit.KryptonCheckBox();
             this.chkISSN = new Krypton.Toolkit.KryptonCheckBox();
             this.chkISBN = new Krypton.Toolkit.KryptonCheckBox();
             this.lblEtiqueta = new Krypton.Toolkit.KryptonLabel();
             this.cmbPalabras = new Krypton.Toolkit.KryptonComboBox();
             this.lblPalabras = new Krypton.Toolkit.KryptonLabel();
-            this.btnAddPalabras = new Krypton.Toolkit.KryptonButton();
+            this.btnAgregarPortada = new project.CLASS.BButtons();
+            this.btnAddPalabras = new project.CLASS.BButtons();
+            this.btnAgregar = new project.CLASS.BButtons();
             ((System.ComponentModel.ISupportInitialize)(this.cmbIdiomas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPortada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFormato)).BeginInit();
@@ -62,8 +62,8 @@
             // 
             // lblNombre
             // 
-            this.lblNombre.Location = new System.Drawing.Point(16, 28);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblNombre.Location = new System.Drawing.Point(18, 35);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(205, 28);
             this.lblNombre.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,10 +74,10 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(16, 66);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Location = new System.Drawing.Point(18, 82);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(275, 26);
+            this.txtNombre.Size = new System.Drawing.Size(309, 26);
             this.txtNombre.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtNombre.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -95,8 +95,8 @@
             // 
             // lblAutor
             // 
-            this.lblAutor.Location = new System.Drawing.Point(16, 132);
-            this.lblAutor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblAutor.Location = new System.Drawing.Point(18, 165);
+            this.lblAutor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblAutor.Name = "lblAutor";
             this.lblAutor.Size = new System.Drawing.Size(180, 28);
             this.lblAutor.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,10 +107,10 @@
             // 
             // txtAutor
             // 
-            this.txtAutor.Location = new System.Drawing.Point(16, 170);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAutor.Location = new System.Drawing.Point(18, 212);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(275, 26);
+            this.txtAutor.Size = new System.Drawing.Size(309, 26);
             this.txtAutor.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtAutor.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtAutor.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -139,10 +139,10 @@
             "Japones",
             "Italiano",
             "Mandarin"});
-            this.cmbIdiomas.Location = new System.Drawing.Point(16, 379);
-            this.cmbIdiomas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbIdiomas.Location = new System.Drawing.Point(18, 474);
+            this.cmbIdiomas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbIdiomas.Name = "cmbIdiomas";
-            this.cmbIdiomas.Size = new System.Drawing.Size(227, 21);
+            this.cmbIdiomas.Size = new System.Drawing.Size(255, 21);
             this.cmbIdiomas.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbIdiomas.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbIdiomas.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -150,8 +150,8 @@
             // 
             // lblIdioma
             // 
-            this.lblIdioma.Location = new System.Drawing.Point(16, 341);
-            this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblIdioma.Location = new System.Drawing.Point(18, 426);
+            this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblIdioma.Name = "lblIdioma";
             this.lblIdioma.Size = new System.Drawing.Size(78, 28);
             this.lblIdioma.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,10 +161,10 @@
             // 
             // txtEditorial
             // 
-            this.txtEditorial.Location = new System.Drawing.Point(16, 272);
-            this.txtEditorial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEditorial.Location = new System.Drawing.Point(18, 340);
+            this.txtEditorial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEditorial.Name = "txtEditorial";
-            this.txtEditorial.Size = new System.Drawing.Size(275, 26);
+            this.txtEditorial.Size = new System.Drawing.Size(309, 26);
             this.txtEditorial.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtEditorial.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtEditorial.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -182,8 +182,8 @@
             // 
             // lblEditorial
             // 
-            this.lblEditorial.Location = new System.Drawing.Point(16, 234);
-            this.lblEditorial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblEditorial.Location = new System.Drawing.Point(18, 292);
+            this.lblEditorial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblEditorial.Name = "lblEditorial";
             this.lblEditorial.Size = new System.Drawing.Size(202, 28);
             this.lblEditorial.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,51 +195,23 @@
             // picPortada
             // 
             this.picPortada.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.picPortada.Location = new System.Drawing.Point(775, 28);
-            this.picPortada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picPortada.Image = global::project.Properties.Resources.MaterialGoldIcon;
+            this.picPortada.Location = new System.Drawing.Point(860, 35);
+            this.picPortada.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picPortada.Name = "picPortada";
-            this.picPortada.Size = new System.Drawing.Size(276, 265);
+            this.picPortada.Size = new System.Drawing.Size(331, 331);
             this.picPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPortada.TabIndex = 11;
             this.picPortada.TabStop = false;
-            // 
-            // btnAgregarPortada
-            // 
-            this.btnAgregarPortada.Location = new System.Drawing.Point(756, 311);
-            this.btnAgregarPortada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAgregarPortada.Name = "btnAgregarPortada";
-            this.btnAgregarPortada.Size = new System.Drawing.Size(311, 46);
-            this.btnAgregarPortada.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPortada.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregarPortada.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregarPortada.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregarPortada.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregarPortada.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAgregarPortada.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAgregarPortada.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAgregarPortada.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPortada.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregarPortada.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregarPortada.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregarPortada.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregarPortada.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAgregarPortada.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPortada.TabIndex = 12;
-            this.btnAgregarPortada.Values.Text = "Agregar una Imagen";
-            this.btnAgregarPortada.Click += new System.EventHandler(this.btnAgregarPortada_Click);
             // 
             // dtpFechaPublicacion
             // 
             this.dtpFechaPublicacion.CustomFormat = "dd-MM-yyyy";
             this.dtpFechaPublicacion.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaPublicacion.Location = new System.Drawing.Point(391, 73);
-            this.dtpFechaPublicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaPublicacion.Location = new System.Drawing.Point(440, 91);
+            this.dtpFechaPublicacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaPublicacion.Name = "dtpFechaPublicacion";
-            this.dtpFechaPublicacion.Size = new System.Drawing.Size(135, 22);
+            this.dtpFechaPublicacion.Size = new System.Drawing.Size(152, 22);
             this.dtpFechaPublicacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.dtpFechaPublicacion.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.dtpFechaPublicacion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -248,8 +220,8 @@
             // 
             // lblFecha
             // 
-            this.lblFecha.Location = new System.Drawing.Point(391, 28);
-            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblFecha.Location = new System.Drawing.Point(440, 35);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(217, 28);
             this.lblFecha.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -259,8 +231,8 @@
             // 
             // lblFormato
             // 
-            this.lblFormato.Location = new System.Drawing.Point(16, 423);
-            this.lblFormato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblFormato.Location = new System.Drawing.Point(18, 529);
+            this.lblFormato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblFormato.Name = "lblFormato";
             this.lblFormato.Size = new System.Drawing.Size(93, 28);
             this.lblFormato.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -270,8 +242,8 @@
             // 
             // lblColeccion
             // 
-            this.lblColeccion.Location = new System.Drawing.Point(391, 132);
-            this.lblColeccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblColeccion.Location = new System.Drawing.Point(440, 165);
+            this.lblColeccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblColeccion.Name = "lblColeccion";
             this.lblColeccion.Size = new System.Drawing.Size(108, 28);
             this.lblColeccion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -285,10 +257,10 @@
             this.cmbFormato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFormato.DropDownWidth = 192;
             this.cmbFormato.IntegralHeight = false;
-            this.cmbFormato.Location = new System.Drawing.Point(16, 463);
-            this.cmbFormato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbFormato.Location = new System.Drawing.Point(18, 579);
+            this.cmbFormato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbFormato.Name = "cmbFormato";
-            this.cmbFormato.Size = new System.Drawing.Size(227, 21);
+            this.cmbFormato.Size = new System.Drawing.Size(255, 21);
             this.cmbFormato.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbFormato.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFormato.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -300,10 +272,10 @@
             this.cmbColeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbColeccion.DropDownWidth = 121;
             this.cmbColeccion.IntegralHeight = false;
-            this.cmbColeccion.Location = new System.Drawing.Point(391, 170);
-            this.cmbColeccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbColeccion.Location = new System.Drawing.Point(440, 212);
+            this.cmbColeccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbColeccion.Name = "cmbColeccion";
-            this.cmbColeccion.Size = new System.Drawing.Size(256, 21);
+            this.cmbColeccion.Size = new System.Drawing.Size(288, 21);
             this.cmbColeccion.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbColeccion.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbColeccion.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -311,10 +283,10 @@
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(388, 555);
-            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmacion.Location = new System.Drawing.Point(436, 694);
+            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtConfirmacion.Name = "txtConfirmacion";
-            this.txtConfirmacion.Size = new System.Drawing.Size(455, 31);
+            this.txtConfirmacion.Size = new System.Drawing.Size(512, 31);
             this.txtConfirmacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtConfirmacion.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -325,39 +297,10 @@
             this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
             this.txtConfirmacion.Leave += new System.EventHandler(this.txtConfirmacion_Leave);
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(851, 548);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(216, 46);
-            this.btnAgregar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAgregar.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAgregar.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAgregar.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAgregar.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.TabIndex = 19;
-            this.btnAgregar.Values.Text = "Agregar Material";
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
             // chkDOI
             // 
-            this.chkDOI.Location = new System.Drawing.Point(391, 314);
-            this.chkDOI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkDOI.Location = new System.Drawing.Point(440, 392);
+            this.chkDOI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkDOI.Name = "chkDOI";
             this.chkDOI.Size = new System.Drawing.Size(51, 24);
             this.chkDOI.TabIndex = 21;
@@ -365,8 +308,8 @@
             // 
             // chkISSN
             // 
-            this.chkISSN.Location = new System.Drawing.Point(391, 282);
-            this.chkISSN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkISSN.Location = new System.Drawing.Point(440, 352);
+            this.chkISSN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkISSN.Name = "chkISSN";
             this.chkISSN.Size = new System.Drawing.Size(57, 24);
             this.chkISSN.TabIndex = 22;
@@ -374,8 +317,8 @@
             // 
             // chkISBN
             // 
-            this.chkISBN.Location = new System.Drawing.Point(391, 250);
-            this.chkISBN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkISBN.Location = new System.Drawing.Point(440, 312);
+            this.chkISBN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkISBN.Name = "chkISBN";
             this.chkISBN.Size = new System.Drawing.Size(57, 24);
             this.chkISBN.TabIndex = 23;
@@ -383,8 +326,8 @@
             // 
             // lblEtiqueta
             // 
-            this.lblEtiqueta.Location = new System.Drawing.Point(391, 212);
-            this.lblEtiqueta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblEtiqueta.Location = new System.Drawing.Point(440, 265);
+            this.lblEtiqueta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblEtiqueta.Name = "lblEtiqueta";
             this.lblEtiqueta.Size = new System.Drawing.Size(103, 28);
             this.lblEtiqueta.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -397,10 +340,10 @@
             this.cmbPalabras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.cmbPalabras.DropDownWidth = 121;
             this.cmbPalabras.IntegralHeight = false;
-            this.cmbPalabras.Location = new System.Drawing.Point(388, 411);
-            this.cmbPalabras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPalabras.Location = new System.Drawing.Point(436, 514);
+            this.cmbPalabras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbPalabras.Name = "cmbPalabras";
-            this.cmbPalabras.Size = new System.Drawing.Size(256, 21);
+            this.cmbPalabras.Size = new System.Drawing.Size(288, 21);
             this.cmbPalabras.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbPalabras.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPalabras.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
@@ -408,8 +351,8 @@
             // 
             // lblPalabras
             // 
-            this.lblPalabras.Location = new System.Drawing.Point(388, 373);
-            this.lblPalabras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblPalabras.Location = new System.Drawing.Point(436, 466);
+            this.lblPalabras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblPalabras.Name = "lblPalabras";
             this.lblPalabras.Size = new System.Drawing.Size(154, 28);
             this.lblPalabras.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,42 +360,84 @@
             this.lblPalabras.TabIndex = 26;
             this.lblPalabras.Values.Text = "Palabras clave";
             // 
+            // btnAgregarPortada
+            // 
+            this.btnAgregarPortada.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregarPortada.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregarPortada.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregarPortada.BorderRadius = 20;
+            this.btnAgregarPortada.BorderSize = 0;
+            this.btnAgregarPortada.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregarPortada.FlatAppearance.BorderSize = 0;
+            this.btnAgregarPortada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
+            this.btnAgregarPortada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarPortada.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPortada.ForeColor = System.Drawing.Color.FloralWhite;
+            this.btnAgregarPortada.Location = new System.Drawing.Point(860, 375);
+            this.btnAgregarPortada.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregarPortada.Name = "btnAgregarPortada";
+            this.btnAgregarPortada.Size = new System.Drawing.Size(331, 64);
+            this.btnAgregarPortada.TabIndex = 29;
+            this.btnAgregarPortada.Text = "AGREGAR UNA IMAGEN";
+            this.btnAgregarPortada.TextColor = System.Drawing.Color.FloralWhite;
+            this.btnAgregarPortada.UseVisualStyleBackColor = false;
+            this.btnAgregarPortada.Click += new System.EventHandler(this.btnAgregarPortada_Click_1);
+            // 
             // btnAddPalabras
             // 
-            this.btnAddPalabras.Location = new System.Drawing.Point(388, 443);
-            this.btnAddPalabras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddPalabras.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnAddPalabras.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.btnAddPalabras.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAddPalabras.BorderRadius = 20;
+            this.btnAddPalabras.BorderSize = 0;
+            this.btnAddPalabras.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnAddPalabras.FlatAppearance.BorderSize = 0;
+            this.btnAddPalabras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
+            this.btnAddPalabras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPalabras.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPalabras.ForeColor = System.Drawing.Color.FloralWhite;
+            this.btnAddPalabras.Location = new System.Drawing.Point(447, 553);
+            this.btnAddPalabras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddPalabras.Name = "btnAddPalabras";
-            this.btnAddPalabras.Size = new System.Drawing.Size(216, 46);
-            this.btnAddPalabras.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPalabras.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAddPalabras.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAddPalabras.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAddPalabras.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAddPalabras.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddPalabras.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAddPalabras.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAddPalabras.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPalabras.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAddPalabras.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAddPalabras.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAddPalabras.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAddPalabras.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddPalabras.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPalabras.TabIndex = 28;
-            this.btnAddPalabras.Values.Text = "Agregar Palabras";
-            this.btnAddPalabras.Click += new System.EventHandler(this.btnAddPalabras_Click);
+            this.btnAddPalabras.Size = new System.Drawing.Size(264, 58);
+            this.btnAddPalabras.TabIndex = 30;
+            this.btnAddPalabras.Text = "AGREGAR PALABRAS";
+            this.btnAddPalabras.TextColor = System.Drawing.Color.FloralWhite;
+            this.btnAddPalabras.UseVisualStyleBackColor = false;
+            this.btnAddPalabras.Click += new System.EventHandler(this.btnAddPalabras_Click_1);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregar.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregar.BorderRadius = 20;
+            this.btnAgregar.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.FloralWhite;
+            this.btnAgregar.Location = new System.Drawing.Point(955, 674);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(236, 60);
+            this.btnAgregar.TabIndex = 31;
+            this.btnAgregar.Text = "AGREGAR MATERIAL";
+            this.btnAgregar.TextColor = System.Drawing.Color.FloralWhite;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
             // 
             // frmAñadirMaterial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project.Properties.Resources.PrincipalBGYP;
-            this.ClientSize = new System.Drawing.Size(1124, 615);
+            this.ClientSize = new System.Drawing.Size(1264, 769);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnAddPalabras);
+            this.Controls.Add(this.btnAgregarPortada);
             this.Controls.Add(this.cmbPalabras);
             this.Controls.Add(this.lblPalabras);
             this.Controls.Add(this.lblEtiqueta);
@@ -460,14 +445,12 @@
             this.Controls.Add(this.chkISSN);
             this.Controls.Add(this.chkDOI);
             this.Controls.Add(this.txtConfirmacion);
-            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbColeccion);
             this.Controls.Add(this.cmbFormato);
             this.Controls.Add(this.lblColeccion);
             this.Controls.Add(this.lblFormato);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.dtpFechaPublicacion);
-            this.Controls.Add(this.btnAgregarPortada);
             this.Controls.Add(this.picPortada);
             this.Controls.Add(this.txtEditorial);
             this.Controls.Add(this.lblEditorial);
@@ -478,7 +461,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAñadirMaterial";
             this.Text = "frmAñadirMaterial";
             ((System.ComponentModel.ISupportInitialize)(this.cmbIdiomas)).EndInit();
@@ -502,7 +485,6 @@
         private Krypton.Toolkit.KryptonTextBox txtEditorial;
         private Krypton.Toolkit.KryptonLabel lblEditorial;
         private System.Windows.Forms.PictureBox picPortada;
-        private Krypton.Toolkit.KryptonButton btnAgregarPortada;
         private Krypton.Toolkit.KryptonDateTimePicker dtpFechaPublicacion;
         private Krypton.Toolkit.KryptonLabel lblFecha;
         private Krypton.Toolkit.KryptonLabel lblFormato;
@@ -510,13 +492,14 @@
         private Krypton.Toolkit.KryptonComboBox cmbFormato;
         private Krypton.Toolkit.KryptonComboBox cmbColeccion;
         private Krypton.Toolkit.KryptonTextBox txtConfirmacion;
-        private Krypton.Toolkit.KryptonButton btnAgregar;
         private Krypton.Toolkit.KryptonCheckBox chkDOI;
         private Krypton.Toolkit.KryptonCheckBox chkISSN;
         private Krypton.Toolkit.KryptonCheckBox chkISBN;
         private Krypton.Toolkit.KryptonLabel lblEtiqueta;
         private Krypton.Toolkit.KryptonComboBox cmbPalabras;
         private Krypton.Toolkit.KryptonLabel lblPalabras;
-        private Krypton.Toolkit.KryptonButton btnAddPalabras;
+        private CLASS.BButtons btnAgregarPortada;
+        private CLASS.BButtons btnAddPalabras;
+        private CLASS.BButtons btnAgregar;
     }
 }
