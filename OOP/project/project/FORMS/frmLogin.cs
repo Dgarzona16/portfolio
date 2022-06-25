@@ -40,7 +40,7 @@ namespace project.FORMS
             if (txtUsuario.Text == "Introduzca su Usuario")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.Black;
+                txtUsuario.ForeColor = Color.Gold;
             }
         }
 
@@ -58,7 +58,7 @@ namespace project.FORMS
             if (txtContraseña.Text == "Introduzca su Contraseña")
             {
                 txtContraseña.Text = "";
-                txtContraseña.ForeColor = Color.Black;
+                txtContraseña.ForeColor = Color.Gold;
                 txtContraseña.UseSystemPasswordChar = true;
             }
         }

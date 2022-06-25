@@ -115,6 +115,12 @@
     <Compile Include="FORMS\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\frmViewCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmViewCarnet.Designer.cs">
+      <DependentUpon>frmViewCarnet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FORMS\frmAñadirColeccion.resx">
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmViewCarnet.resx">
+      <DependentUpon>frmViewCarnet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -218,6 +227,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ButtonBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BINAESLogoGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoESGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBGGold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGW1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGYP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGoldIcon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
