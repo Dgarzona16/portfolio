@@ -195,7 +195,7 @@
             // picPortada
             // 
             this.picPortada.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.picPortada.Image = global::project.Properties.Resources.MaterialGoldIcon;
+            this.picPortada.Image = global::project.Properties.Resources.MaterialGoldIconWB;
             this.picPortada.Location = new System.Drawing.Point(860, 35);
             this.picPortada.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picPortada.Name = "picPortada";
@@ -283,23 +283,25 @@
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(436, 694);
+            this.txtConfirmacion.Location = new System.Drawing.Point(860, 569);
             this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtConfirmacion.Name = "txtConfirmacion";
-            this.txtConfirmacion.Size = new System.Drawing.Size(512, 31);
+            this.txtConfirmacion.Size = new System.Drawing.Size(331, 31);
             this.txtConfirmacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
+            this.txtConfirmacion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtConfirmacion.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtConfirmacion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.TabIndex = 20;
             this.txtConfirmacion.Text = "Confirmar contraseña";
+            this.txtConfirmacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
             this.txtConfirmacion.Leave += new System.EventHandler(this.txtConfirmacion_Leave);
             // 
             // chkDOI
             // 
-            this.chkDOI.Location = new System.Drawing.Point(440, 392);
+            this.chkDOI.Location = new System.Drawing.Point(440, 471);
             this.chkDOI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkDOI.Name = "chkDOI";
             this.chkDOI.Size = new System.Drawing.Size(51, 24);
@@ -308,7 +310,7 @@
             // 
             // chkISSN
             // 
-            this.chkISSN.Location = new System.Drawing.Point(440, 352);
+            this.chkISSN.Location = new System.Drawing.Point(440, 416);
             this.chkISSN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkISSN.Name = "chkISSN";
             this.chkISSN.Size = new System.Drawing.Size(57, 24);
@@ -317,7 +319,7 @@
             // 
             // chkISBN
             // 
-            this.chkISBN.Location = new System.Drawing.Point(440, 312);
+            this.chkISBN.Location = new System.Drawing.Point(440, 359);
             this.chkISBN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkISBN.Name = "chkISBN";
             this.chkISBN.Size = new System.Drawing.Size(57, 24);
@@ -326,7 +328,7 @@
             // 
             // lblEtiqueta
             // 
-            this.lblEtiqueta.Location = new System.Drawing.Point(440, 265);
+            this.lblEtiqueta.Location = new System.Drawing.Point(440, 292);
             this.lblEtiqueta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblEtiqueta.Name = "lblEtiqueta";
             this.lblEtiqueta.Size = new System.Drawing.Size(103, 28);
@@ -340,7 +342,7 @@
             this.cmbPalabras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.cmbPalabras.DropDownWidth = 121;
             this.cmbPalabras.IntegralHeight = false;
-            this.cmbPalabras.Location = new System.Drawing.Point(436, 514);
+            this.cmbPalabras.Location = new System.Drawing.Point(440, 579);
             this.cmbPalabras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbPalabras.Name = "cmbPalabras";
             this.cmbPalabras.Size = new System.Drawing.Size(288, 21);
@@ -351,7 +353,7 @@
             // 
             // lblPalabras
             // 
-            this.lblPalabras.Location = new System.Drawing.Point(436, 466);
+            this.lblPalabras.Location = new System.Drawing.Point(440, 531);
             this.lblPalabras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblPalabras.Name = "lblPalabras";
             this.lblPalabras.Size = new System.Drawing.Size(154, 28);
@@ -373,7 +375,7 @@
             this.btnAgregarPortada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarPortada.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarPortada.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregarPortada.Location = new System.Drawing.Point(860, 375);
+            this.btnAgregarPortada.Location = new System.Drawing.Point(860, 390);
             this.btnAgregarPortada.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregarPortada.Name = "btnAgregarPortada";
             this.btnAgregarPortada.Size = new System.Drawing.Size(331, 64);
@@ -396,10 +398,10 @@
             this.btnAddPalabras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddPalabras.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddPalabras.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAddPalabras.Location = new System.Drawing.Point(447, 553);
+            this.btnAddPalabras.Location = new System.Drawing.Point(440, 618);
             this.btnAddPalabras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddPalabras.Name = "btnAddPalabras";
-            this.btnAddPalabras.Size = new System.Drawing.Size(264, 58);
+            this.btnAddPalabras.Size = new System.Drawing.Size(288, 58);
             this.btnAddPalabras.TabIndex = 30;
             this.btnAddPalabras.Text = "AGREGAR PALABRAS";
             this.btnAddPalabras.TextColor = System.Drawing.Color.FloralWhite;
@@ -419,10 +421,10 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregar.Location = new System.Drawing.Point(955, 674);
+            this.btnAgregar.Location = new System.Drawing.Point(888, 619);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(236, 60);
+            this.btnAgregar.Size = new System.Drawing.Size(278, 60);
             this.btnAgregar.TabIndex = 31;
             this.btnAgregar.Text = "AGREGAR MATERIAL";
             this.btnAgregar.TextColor = System.Drawing.Color.FloralWhite;
