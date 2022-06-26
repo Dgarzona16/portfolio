@@ -133,6 +133,16 @@ namespace project.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EventGoldIcon {
+            get {
+                object obj = ResourceManager.GetObject("EventGoldIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap log_out {
             get {
                 object obj = ResourceManager.GetObject("log_out", resourceCulture);
@@ -196,6 +206,26 @@ namespace project.Properties {
         internal static System.Drawing.Bitmap material_white {
             get {
                 object obj = ResourceManager.GetObject("material_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaterialGoldIcon {
+            get {
+                object obj = ResourceManager.GetObject("MaterialGoldIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaterialGoldIconWB {
+            get {
+                object obj = ResourceManager.GetObject("MaterialGoldIconWB", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

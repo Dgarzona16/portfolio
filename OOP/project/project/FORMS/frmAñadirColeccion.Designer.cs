@@ -37,14 +37,14 @@
             this.cmbAreas = new Krypton.Toolkit.KryptonComboBox();
             this.lblArea = new Krypton.Toolkit.KryptonLabel();
             this.txtConfirmacion = new Krypton.Toolkit.KryptonTextBox();
-            this.btnAgregar = new Krypton.Toolkit.KryptonButton();
+            this.btnAgregar = new project.CLASS.BButtons();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAreas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombre
             // 
-            this.lblNombre.Location = new System.Drawing.Point(49, 86);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblNombre.Location = new System.Drawing.Point(55, 108);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(213, 28);
             this.lblNombre.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -55,10 +55,10 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(49, 124);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Location = new System.Drawing.Point(55, 155);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(275, 26);
+            this.txtNombre.Size = new System.Drawing.Size(309, 26);
             this.txtNombre.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtNombre.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -76,8 +76,8 @@
             // 
             // lblTipo
             // 
-            this.lblTipo.Location = new System.Drawing.Point(49, 254);
-            this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTipo.Location = new System.Drawing.Point(55, 318);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(179, 28);
             this.lblTipo.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,10 +88,10 @@
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(49, 292);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipo.Location = new System.Drawing.Point(55, 365);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(275, 26);
+            this.txtTipo.Size = new System.Drawing.Size(309, 26);
             this.txtTipo.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtTipo.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtTipo.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -109,10 +109,10 @@
             // 
             // txtGenero
             // 
-            this.txtGenero.Location = new System.Drawing.Point(691, 124);
-            this.txtGenero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGenero.Location = new System.Drawing.Point(777, 155);
+            this.txtGenero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(275, 26);
+            this.txtGenero.Size = new System.Drawing.Size(309, 26);
             this.txtGenero.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtGenero.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtGenero.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -130,8 +130,8 @@
             // 
             // lblGenero
             // 
-            this.lblGenero.Location = new System.Drawing.Point(691, 86);
-            this.lblGenero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblGenero.Location = new System.Drawing.Point(777, 108);
+            this.lblGenero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblGenero.Name = "lblGenero";
             this.lblGenero.Size = new System.Drawing.Size(209, 28);
             this.lblGenero.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,18 +146,18 @@
             this.cmbAreas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAreas.DropDownWidth = 121;
             this.cmbAreas.IntegralHeight = false;
-            this.cmbAreas.Location = new System.Drawing.Point(691, 299);
-            this.cmbAreas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAreas.Location = new System.Drawing.Point(777, 374);
+            this.cmbAreas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbAreas.Name = "cmbAreas";
-            this.cmbAreas.Size = new System.Drawing.Size(345, 25);
+            this.cmbAreas.Size = new System.Drawing.Size(397, 25);
             this.cmbAreas.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbAreas.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.cmbAreas.TabIndex = 15;
             // 
             // lblArea
             // 
-            this.lblArea.Location = new System.Drawing.Point(691, 254);
-            this.lblArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblArea.Location = new System.Drawing.Point(777, 318);
+            this.lblArea.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(58, 28);
             this.lblArea.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,55 +167,51 @@
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(156, 518);
-            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmacion.Location = new System.Drawing.Point(408, 522);
+            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtConfirmacion.Name = "txtConfirmacion";
-            this.txtConfirmacion.Size = new System.Drawing.Size(455, 31);
+            this.txtConfirmacion.Size = new System.Drawing.Size(410, 31);
             this.txtConfirmacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
+            this.txtConfirmacion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtConfirmacion.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtConfirmacion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.TabIndex = 17;
             this.txtConfirmacion.Text = "Confirmar contraseña";
+            this.txtConfirmacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
             this.txtConfirmacion.Leave += new System.EventHandler(this.txtConfirmacion_Leave);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(677, 518);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregar.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregar.BorderRadius = 20;
+            this.btnAgregar.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.FloralWhite;
+            this.btnAgregar.Location = new System.Drawing.Point(438, 575);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(216, 46);
-            this.btnAgregar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
-            this.btnAgregar.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAgregar.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAgregar.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAgregar.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(230)))));
-            this.btnAgregar.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAgregar.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.TabIndex = 18;
-            this.btnAgregar.Values.Text = "Agregar Coleccion";
+            this.btnAgregar.Size = new System.Drawing.Size(355, 63);
+            this.btnAgregar.TabIndex = 32;
+            this.btnAgregar.Text = "AGREGAR COLECCIÓN";
+            this.btnAgregar.TextColor = System.Drawing.Color.FloralWhite;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // frmAñadirColeccion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project.Properties.Resources.PrincipalBGYP;
-            this.ClientSize = new System.Drawing.Size(1124, 615);
+            this.ClientSize = new System.Drawing.Size(1264, 769);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtConfirmacion);
             this.Controls.Add(this.lblArea);
@@ -227,7 +223,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAñadirColeccion";
             this.Text = "frmAñadirColeccion";
             ((System.ComponentModel.ISupportInitialize)(this.cmbAreas)).EndInit();
@@ -247,6 +243,6 @@
         private Krypton.Toolkit.KryptonComboBox cmbAreas;
         private Krypton.Toolkit.KryptonLabel lblArea;
         private Krypton.Toolkit.KryptonTextBox txtConfirmacion;
-        private Krypton.Toolkit.KryptonButton btnAgregar;
+        private CLASS.BButtons btnAgregar;
     }
 }
