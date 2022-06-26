@@ -252,5 +252,14 @@
   <ItemGroup>
     <None Include="Resources\UserGoldIcon.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaterialGoldIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EventGoldIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaterialGoldIconWB.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

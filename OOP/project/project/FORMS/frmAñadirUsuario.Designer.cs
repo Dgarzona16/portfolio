@@ -49,8 +49,8 @@
             // 
             // lblNombre
             // 
-            this.lblNombre.Location = new System.Drawing.Point(16, 15);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.lblNombre.Location = new System.Drawing.Point(18, 19);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(203, 28);
             this.lblNombre.StateCommon.LongText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -61,10 +61,10 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(16, 53);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Location = new System.Drawing.Point(18, 66);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(275, 30);
+            this.txtNombre.Size = new System.Drawing.Size(309, 30);
             this.txtNombre.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtNombre.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -83,10 +83,10 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(16, 231);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDireccion.Location = new System.Drawing.Point(18, 324);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(275, 30);
+            this.txtDireccion.Size = new System.Drawing.Size(309, 30);
             this.txtDireccion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtDireccion.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtDireccion.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -105,8 +105,8 @@
             // 
             // lblDireccion
             // 
-            this.lblDireccion.Location = new System.Drawing.Point(16, 193);
-            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.lblDireccion.Location = new System.Drawing.Point(18, 276);
+            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(103, 28);
             this.lblDireccion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,10 +117,10 @@
             // 
             // txtInstitucion
             // 
-            this.txtInstitucion.Location = new System.Drawing.Point(16, 428);
-            this.txtInstitucion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtInstitucion.Location = new System.Drawing.Point(18, 564);
+            this.txtInstitucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtInstitucion.Name = "txtInstitucion";
-            this.txtInstitucion.Size = new System.Drawing.Size(275, 30);
+            this.txtInstitucion.Size = new System.Drawing.Size(309, 30);
             this.txtInstitucion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtInstitucion.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtInstitucion.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -139,8 +139,8 @@
             // 
             // lblInstitucion
             // 
-            this.lblInstitucion.Location = new System.Drawing.Point(16, 390);
-            this.lblInstitucion.Margin = new System.Windows.Forms.Padding(4);
+            this.lblInstitucion.Location = new System.Drawing.Point(18, 517);
+            this.lblInstitucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblInstitucion.Name = "lblInstitucion";
             this.lblInstitucion.Size = new System.Drawing.Size(111, 28);
             this.lblInstitucion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,10 +151,10 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(331, 53);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefono.Location = new System.Drawing.Point(372, 66);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(275, 30);
+            this.txtTelefono.Size = new System.Drawing.Size(309, 30);
             this.txtTelefono.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtTelefono.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtTelefono.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -173,8 +173,8 @@
             // 
             // lblTelefono
             // 
-            this.lblTelefono.Location = new System.Drawing.Point(331, 15);
-            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.lblTelefono.Location = new System.Drawing.Point(372, 19);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(97, 28);
             this.lblTelefono.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,10 +185,10 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(331, 231);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCorreo.Location = new System.Drawing.Point(372, 324);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(275, 30);
+            this.txtCorreo.Size = new System.Drawing.Size(309, 30);
             this.txtCorreo.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtCorreo.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtCorreo.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -207,8 +207,8 @@
             // 
             // lblCorreo
             // 
-            this.lblCorreo.Location = new System.Drawing.Point(331, 193);
-            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.lblCorreo.Location = new System.Drawing.Point(372, 276);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(188, 28);
             this.lblCorreo.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,10 +219,10 @@
             // 
             // txtOcupacion
             // 
-            this.txtOcupacion.Location = new System.Drawing.Point(331, 431);
-            this.txtOcupacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOcupacion.Location = new System.Drawing.Point(372, 568);
+            this.txtOcupacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtOcupacion.Name = "txtOcupacion";
-            this.txtOcupacion.Size = new System.Drawing.Size(275, 30);
+            this.txtOcupacion.Size = new System.Drawing.Size(309, 30);
             this.txtOcupacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtOcupacion.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtOcupacion.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -241,8 +241,8 @@
             // 
             // lblOcupacion
             // 
-            this.lblOcupacion.Location = new System.Drawing.Point(331, 393);
-            this.lblOcupacion.Margin = new System.Windows.Forms.Padding(4);
+            this.lblOcupacion.Location = new System.Drawing.Point(372, 520);
+            this.lblOcupacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblOcupacion.Name = "lblOcupacion";
             this.lblOcupacion.Size = new System.Drawing.Size(115, 28);
             this.lblOcupacion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -255,20 +255,20 @@
             // 
             this.picFotografia.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.picFotografia.Image = global::project.Properties.Resources.UserGoldIcon;
-            this.picFotografia.Location = new System.Drawing.Point(739, 28);
-            this.picFotografia.Margin = new System.Windows.Forms.Padding(4);
+            this.picFotografia.Location = new System.Drawing.Point(831, 35);
+            this.picFotografia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picFotografia.Name = "picFotografia";
-            this.picFotografia.Size = new System.Drawing.Size(276, 276);
+            this.picFotografia.Size = new System.Drawing.Size(310, 345);
             this.picFotografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFotografia.TabIndex = 16;
             this.picFotografia.TabStop = false;
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(379, 560);
-            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtConfirmacion.Location = new System.Drawing.Point(831, 569);
+            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtConfirmacion.Name = "txtConfirmacion";
-            this.txtConfirmacion.Size = new System.Drawing.Size(455, 31);
+            this.txtConfirmacion.Size = new System.Drawing.Size(312, 31);
             this.txtConfirmacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtConfirmacion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -277,6 +277,7 @@
             this.txtConfirmacion.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.TabIndex = 22;
             this.txtConfirmacion.Text = "Confirmar contraseña";
+            this.txtConfirmacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
             this.txtConfirmacion.Leave += new System.EventHandler(this.txtConfirmacion_Leave);
             // 
@@ -293,11 +294,12 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregar.Location = new System.Drawing.Point(850, 532);
+            this.btnAgregar.Location = new System.Drawing.Point(857, 609);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(225, 59);
+            this.btnAgregar.Size = new System.Drawing.Size(265, 61);
             this.btnAgregar.TabIndex = 24;
-            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Text = "AGREGAR USUARIO";
             this.btnAgregar.TextColor = System.Drawing.Color.FloralWhite;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
@@ -315,22 +317,23 @@
             this.btnAgregarFotografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarFotografia.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarFotografia.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregarFotografia.Location = new System.Drawing.Point(741, 320);
+            this.btnAgregarFotografia.Location = new System.Drawing.Point(829, 400);
+            this.btnAgregarFotografia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregarFotografia.Name = "btnAgregarFotografia";
-            this.btnAgregarFotografia.Size = new System.Drawing.Size(273, 59);
+            this.btnAgregarFotografia.Size = new System.Drawing.Size(312, 74);
             this.btnAgregarFotografia.TabIndex = 23;
-            this.btnAgregarFotografia.Text = "Agregar Fotografía";
+            this.btnAgregarFotografia.Text = "AGREGAR FOTOGRAFÍA";
             this.btnAgregarFotografia.TextColor = System.Drawing.Color.FloralWhite;
             this.btnAgregarFotografia.UseVisualStyleBackColor = false;
             this.btnAgregarFotografia.Click += new System.EventHandler(this.btnAgregarFotografia_Click_1);
             // 
             // frmAñadirUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project.Properties.Resources.PrincipalBGY;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1124, 615);
+            this.ClientSize = new System.Drawing.Size(1264, 769);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnAgregarFotografia);
             this.Controls.Add(this.txtConfirmacion);
@@ -348,7 +351,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAñadirUsuario";
             this.Text = "frmAñadirUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.picFotografia)).EndInit();

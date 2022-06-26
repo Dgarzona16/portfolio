@@ -54,7 +54,7 @@ namespace project.FORMS
             if (txtConfirmacion.Text == "Confirmar contraseña")
             {
                 txtConfirmacion.Text = "";
-                txtConfirmacion.StateCommon.Content.Color1 = Color.Black;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.FromArgb(6, 29, 63);
                 txtConfirmacion.UseSystemPasswordChar = true;
             }
         }
@@ -63,14 +63,14 @@ namespace project.FORMS
             if (txtConfirmacion.Text == "")
             {
                 txtConfirmacion.Text = "Confirmar contraseña";
-                txtConfirmacion.StateCommon.Content.Color1 = Color.Gray;
+                txtConfirmacion.StateCommon.Content.Color1 = Color.FromArgb(6, 29, 63);
                 txtConfirmacion.UseSystemPasswordChar = false;
             }
         }
         //
         //Agregar foto
         //
-        private void btnAgregarPortada_Click(object sender, EventArgs e)
+        private void btnAgregarPortada_Click_1(object sender, EventArgs e)
         {
             using(OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -87,14 +87,14 @@ namespace project.FORMS
         //
         //Agregar objetivos 
         //
-        private void btnAddObjetivos_Click(object sender, EventArgs e)
+        private void btnAddObjetivos_Click_1(object sender, EventArgs e)
         {
             cmbObjetivos.Items.Add(cmbObjetivos.Text);
         }
         //
         //Enviar a BD
         //
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnAgregar_Click_1(object sender, EventArgs e)
         {
             NewEvent @event = new NewEvent();
             int area = 0;

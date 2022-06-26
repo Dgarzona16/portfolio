@@ -36,13 +36,13 @@
             this.lblContrasena = new System.Windows.Forms.Label();
             this.txtContraseña = new Krypton.Toolkit.KryptonTextBox();
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.lblInicioSesion = new System.Windows.Forms.Label();
+            this.lblBienvenido = new System.Windows.Forms.Label();
             this.btnSalir = new project.CLASS.BButtons();
             this.btnIngresar = new project.CLASS.BButtons();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblError = new System.Windows.Forms.Label();
-            this.lblBienvenido = new System.Windows.Forms.Label();
-            this.lblInicioSesion = new System.Windows.Forms.Label();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -96,6 +96,7 @@
             this.txtUsuario.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtUsuario.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtUsuario.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.txtUsuario.StateActive.Content.Color1 = System.Drawing.Color.DarkGoldenrod;
             this.txtUsuario.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsuario.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsuario.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -137,6 +138,7 @@
             this.txtContraseña.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtContraseña.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtContraseña.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.txtContraseña.StateActive.Content.Color1 = System.Drawing.Color.DarkGoldenrod;
             this.txtContraseña.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtContraseña.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtContraseña.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -172,6 +174,28 @@
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(841, 468);
             this.pnlLogin.TabIndex = 1;
+            // 
+            // lblInicioSesion
+            // 
+            this.lblInicioSesion.AutoSize = true;
+            this.lblInicioSesion.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.lblInicioSesion.Location = new System.Drawing.Point(104, 87);
+            this.lblInicioSesion.Name = "lblInicioSesion";
+            this.lblInicioSesion.Size = new System.Drawing.Size(174, 36);
+            this.lblInicioSesion.TabIndex = 11;
+            this.lblInicioSesion.Text = "Inicio De Sesión";
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
+            this.lblBienvenido.Location = new System.Drawing.Point(88, 36);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(212, 50);
+            this.lblBienvenido.TabIndex = 10;
+            this.lblBienvenido.Text = "¡BIENVENIDO!";
             // 
             // btnSalir
             // 
@@ -248,28 +272,6 @@
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 17);
             this.lblError.TabIndex = 5;
-            // 
-            // lblBienvenido
-            // 
-            this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.lblBienvenido.Location = new System.Drawing.Point(88, 36);
-            this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(212, 50);
-            this.lblBienvenido.TabIndex = 10;
-            this.lblBienvenido.Text = "¡BIENVENIDO!";
-            // 
-            // lblInicioSesion
-            // 
-            this.lblInicioSesion.AutoSize = true;
-            this.lblInicioSesion.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicioSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.lblInicioSesion.Location = new System.Drawing.Point(104, 87);
-            this.lblInicioSesion.Name = "lblInicioSesion";
-            this.lblInicioSesion.Size = new System.Drawing.Size(174, 36);
-            this.lblInicioSesion.TabIndex = 11;
-            this.lblInicioSesion.Text = "Inicio De Sesión";
             // 
             // frmLogin
             // 
