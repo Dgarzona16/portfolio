@@ -78,12 +78,12 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.lblUsuario.Location = new System.Drawing.Point(33, 166);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(95, 36);
+            this.lblUsuario.Size = new System.Drawing.Size(71, 20);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -92,7 +92,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(33, 198);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(292, 31);
+            this.txtUsuario.Size = new System.Drawing.Size(292, 26);
             this.txtUsuario.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtUsuario.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtUsuario.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -120,12 +120,12 @@
             // lblContrasena
             // 
             this.lblContrasena.AutoSize = true;
-            this.lblContrasena.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContrasena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.lblContrasena.Location = new System.Drawing.Point(33, 257);
             this.lblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(137, 36);
+            this.lblContrasena.Size = new System.Drawing.Size(102, 20);
             this.lblContrasena.TabIndex = 2;
             this.lblContrasena.Text = "Contraseña";
             // 
@@ -134,7 +134,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(33, 288);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(292, 31);
+            this.txtContraseña.Size = new System.Drawing.Size(292, 26);
             this.txtContraseña.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtContraseña.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtContraseña.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -178,22 +178,22 @@
             // lblInicioSesion
             // 
             this.lblInicioSesion.AutoSize = true;
-            this.lblInicioSesion.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInicioSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.lblInicioSesion.Location = new System.Drawing.Point(104, 87);
             this.lblInicioSesion.Name = "lblInicioSesion";
-            this.lblInicioSesion.Size = new System.Drawing.Size(174, 36);
-            this.lblInicioSesion.TabIndex = 11;
+            this.lblInicioSesion.Size = new System.Drawing.Size(140, 20);
+            this.lblInicioSesion.TabIndex = 1;
             this.lblInicioSesion.Text = "Inicio De Sesión";
             // 
             // lblBienvenido
             // 
             this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.lblBienvenido.Location = new System.Drawing.Point(88, 36);
             this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(212, 50);
+            this.lblBienvenido.Size = new System.Drawing.Size(173, 26);
             this.lblBienvenido.TabIndex = 10;
             this.lblBienvenido.Text = "¡BIENVENIDO!";
             // 
@@ -208,12 +208,12 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Nunito ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Location = new System.Drawing.Point(189, 387);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(136, 52);
-            this.btnSalir.TabIndex = 9;
+            this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = " Salir";
             this.btnSalir.TextColor = System.Drawing.Color.White;
             this.btnSalir.UseMnemonic = false;
@@ -231,12 +231,12 @@
             this.btnIngresar.FlatAppearance.BorderSize = 0;
             this.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Olive;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("Nunito ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
             this.btnIngresar.Location = new System.Drawing.Point(32, 387);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(137, 52);
-            this.btnIngresar.TabIndex = 8;
+            this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextColor = System.Drawing.Color.White;
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -270,13 +270,13 @@
             this.lblError.AutoSize = true;
             this.lblError.Location = new System.Drawing.Point(38, 339);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 17);
+            this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 5;
             // 
             // frmLogin
             // 
             this.AccessibleName = "";
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(834, 461);

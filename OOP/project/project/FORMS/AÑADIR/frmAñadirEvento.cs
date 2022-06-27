@@ -35,7 +35,7 @@ namespace project.FORMS
         //
         private void txtTitulo_Enter(object sender, EventArgs e)
         {
-            if (txtTitulo.Text == "Titulo del Evento")
+            if (txtTitulo.Text == "Título del Evento")
             {
                 txtTitulo.Text = "";
                 lblTitulo.Visible = true;
@@ -45,7 +45,7 @@ namespace project.FORMS
         {
             if (txtTitulo.Text == "")
             {
-                txtTitulo.Text = "Titulo del Evento";
+                txtTitulo.Text = "Título del Evento";
                 lblTitulo.Visible = false;
             }
         }
@@ -90,6 +90,7 @@ namespace project.FORMS
         private void btnAddObjetivos_Click_1(object sender, EventArgs e)
         {
             cmbObjetivos.Items.Add(cmbObjetivos.Text);
+            cmbObjetivos.Text = "";
         }
         //
         //Enviar a BD
@@ -134,7 +135,9 @@ namespace project.FORMS
                     txtConfirmacion.Clear();
                     nudCantParticipantes.Value = 0;
                     picPortada.Image = null;
-                    
+                    cmbAreas.Text = "";
+                    cmbObjetivos.Items.Clear();
+
                 }
                 else
                 {

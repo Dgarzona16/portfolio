@@ -62,10 +62,9 @@
             // 
             // lblNombre
             // 
-            this.lblNombre.Location = new System.Drawing.Point(18, 35);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblNombre.Location = new System.Drawing.Point(12, 23);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(205, 28);
+            this.lblNombre.Size = new System.Drawing.Size(166, 23);
             this.lblNombre.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.TabIndex = 3;
@@ -74,10 +73,9 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(18, 82);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombre.Location = new System.Drawing.Point(12, 53);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(309, 26);
+            this.txtNombre.Size = new System.Drawing.Size(206, 22);
             this.txtNombre.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtNombre.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -88,17 +86,16 @@
             this.txtNombre.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtNombre.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.TabIndex = 4;
+            this.txtNombre.TabIndex = 1;
             this.txtNombre.Text = "Nombre del Material";
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // lblAutor
             // 
-            this.lblAutor.Location = new System.Drawing.Point(18, 165);
-            this.lblAutor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAutor.Location = new System.Drawing.Point(12, 107);
             this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(180, 28);
+            this.lblAutor.Size = new System.Drawing.Size(145, 23);
             this.lblAutor.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAutor.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAutor.TabIndex = 5;
@@ -107,10 +104,9 @@
             // 
             // txtAutor
             // 
-            this.txtAutor.Location = new System.Drawing.Point(18, 212);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAutor.Location = new System.Drawing.Point(12, 138);
             this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(309, 26);
+            this.txtAutor.Size = new System.Drawing.Size(206, 22);
             this.txtAutor.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtAutor.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtAutor.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -121,7 +117,7 @@
             this.txtAutor.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtAutor.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtAutor.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutor.TabIndex = 6;
+            this.txtAutor.TabIndex = 2;
             this.txtAutor.Text = "Nombre del Autor";
             this.txtAutor.Enter += new System.EventHandler(this.txtAutor_Enter);
             this.txtAutor.Leave += new System.EventHandler(this.txtAutor_Leave);
@@ -139,21 +135,19 @@
             "Japones",
             "Italiano",
             "Mandarin"});
-            this.cmbIdiomas.Location = new System.Drawing.Point(18, 474);
-            this.cmbIdiomas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbIdiomas.Location = new System.Drawing.Point(12, 308);
             this.cmbIdiomas.Name = "cmbIdiomas";
-            this.cmbIdiomas.Size = new System.Drawing.Size(255, 21);
+            this.cmbIdiomas.Size = new System.Drawing.Size(170, 18);
             this.cmbIdiomas.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbIdiomas.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbIdiomas.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.cmbIdiomas.TabIndex = 7;
+            this.cmbIdiomas.TabIndex = 4;
             // 
             // lblIdioma
             // 
-            this.lblIdioma.Location = new System.Drawing.Point(18, 426);
-            this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblIdioma.Location = new System.Drawing.Point(12, 277);
             this.lblIdioma.Name = "lblIdioma";
-            this.lblIdioma.Size = new System.Drawing.Size(78, 28);
+            this.lblIdioma.Size = new System.Drawing.Size(63, 23);
             this.lblIdioma.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdioma.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdioma.TabIndex = 8;
@@ -161,10 +155,9 @@
             // 
             // txtEditorial
             // 
-            this.txtEditorial.Location = new System.Drawing.Point(18, 340);
-            this.txtEditorial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEditorial.Location = new System.Drawing.Point(12, 221);
             this.txtEditorial.Name = "txtEditorial";
-            this.txtEditorial.Size = new System.Drawing.Size(309, 26);
+            this.txtEditorial.Size = new System.Drawing.Size(206, 22);
             this.txtEditorial.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtEditorial.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtEditorial.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -175,17 +168,16 @@
             this.txtEditorial.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtEditorial.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtEditorial.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditorial.TabIndex = 10;
+            this.txtEditorial.TabIndex = 3;
             this.txtEditorial.Text = "Nombre de Editorial";
             this.txtEditorial.Enter += new System.EventHandler(this.txtEditorial_Enter);
             this.txtEditorial.Leave += new System.EventHandler(this.txtEditorial_Leave);
             // 
             // lblEditorial
             // 
-            this.lblEditorial.Location = new System.Drawing.Point(18, 292);
-            this.lblEditorial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblEditorial.Location = new System.Drawing.Point(12, 190);
             this.lblEditorial.Name = "lblEditorial";
-            this.lblEditorial.Size = new System.Drawing.Size(202, 28);
+            this.lblEditorial.Size = new System.Drawing.Size(163, 23);
             this.lblEditorial.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditorial.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditorial.TabIndex = 9;
@@ -196,10 +188,9 @@
             // 
             this.picPortada.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.picPortada.Image = global::project.Properties.Resources.MaterialGoldIconWB;
-            this.picPortada.Location = new System.Drawing.Point(860, 35);
-            this.picPortada.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picPortada.Location = new System.Drawing.Point(573, 23);
             this.picPortada.Name = "picPortada";
-            this.picPortada.Size = new System.Drawing.Size(331, 331);
+            this.picPortada.Size = new System.Drawing.Size(221, 215);
             this.picPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPortada.TabIndex = 11;
             this.picPortada.TabStop = false;
@@ -208,22 +199,20 @@
             // 
             this.dtpFechaPublicacion.CustomFormat = "dd-MM-yyyy";
             this.dtpFechaPublicacion.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaPublicacion.Location = new System.Drawing.Point(440, 91);
-            this.dtpFechaPublicacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpFechaPublicacion.Location = new System.Drawing.Point(293, 59);
             this.dtpFechaPublicacion.Name = "dtpFechaPublicacion";
-            this.dtpFechaPublicacion.Size = new System.Drawing.Size(152, 22);
+            this.dtpFechaPublicacion.Size = new System.Drawing.Size(101, 18);
             this.dtpFechaPublicacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.dtpFechaPublicacion.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.dtpFechaPublicacion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaPublicacion.TabIndex = 13;
+            this.dtpFechaPublicacion.TabIndex = 6;
             this.dtpFechaPublicacion.ValueNullable = new System.DateTime(2022, 6, 3, 21, 13, 4, 0);
             // 
             // lblFecha
             // 
-            this.lblFecha.Location = new System.Drawing.Point(440, 35);
-            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblFecha.Location = new System.Drawing.Point(293, 23);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(217, 28);
+            this.lblFecha.Size = new System.Drawing.Size(175, 23);
             this.lblFecha.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.TabIndex = 14;
@@ -231,10 +220,9 @@
             // 
             // lblFormato
             // 
-            this.lblFormato.Location = new System.Drawing.Point(18, 529);
-            this.lblFormato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblFormato.Location = new System.Drawing.Point(12, 344);
             this.lblFormato.Name = "lblFormato";
-            this.lblFormato.Size = new System.Drawing.Size(93, 28);
+            this.lblFormato.Size = new System.Drawing.Size(75, 23);
             this.lblFormato.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFormato.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFormato.TabIndex = 15;
@@ -242,10 +230,9 @@
             // 
             // lblColeccion
             // 
-            this.lblColeccion.Location = new System.Drawing.Point(440, 165);
-            this.lblColeccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblColeccion.Location = new System.Drawing.Point(293, 107);
             this.lblColeccion.Name = "lblColeccion";
-            this.lblColeccion.Size = new System.Drawing.Size(108, 28);
+            this.lblColeccion.Size = new System.Drawing.Size(87, 23);
             this.lblColeccion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColeccion.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColeccion.TabIndex = 16;
@@ -257,14 +244,13 @@
             this.cmbFormato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFormato.DropDownWidth = 192;
             this.cmbFormato.IntegralHeight = false;
-            this.cmbFormato.Location = new System.Drawing.Point(18, 579);
-            this.cmbFormato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbFormato.Location = new System.Drawing.Point(12, 376);
             this.cmbFormato.Name = "cmbFormato";
-            this.cmbFormato.Size = new System.Drawing.Size(255, 21);
+            this.cmbFormato.Size = new System.Drawing.Size(170, 18);
             this.cmbFormato.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbFormato.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFormato.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.cmbFormato.TabIndex = 17;
+            this.cmbFormato.TabIndex = 5;
             // 
             // cmbColeccion
             // 
@@ -272,28 +258,26 @@
             this.cmbColeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbColeccion.DropDownWidth = 121;
             this.cmbColeccion.IntegralHeight = false;
-            this.cmbColeccion.Location = new System.Drawing.Point(440, 212);
-            this.cmbColeccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbColeccion.Location = new System.Drawing.Point(293, 138);
             this.cmbColeccion.Name = "cmbColeccion";
-            this.cmbColeccion.Size = new System.Drawing.Size(288, 21);
+            this.cmbColeccion.Size = new System.Drawing.Size(192, 18);
             this.cmbColeccion.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbColeccion.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbColeccion.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.cmbColeccion.TabIndex = 18;
+            this.cmbColeccion.TabIndex = 7;
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(860, 569);
-            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtConfirmacion.Location = new System.Drawing.Point(573, 370);
             this.txtConfirmacion.Name = "txtConfirmacion";
-            this.txtConfirmacion.Size = new System.Drawing.Size(331, 31);
+            this.txtConfirmacion.Size = new System.Drawing.Size(221, 26);
             this.txtConfirmacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtConfirmacion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtConfirmacion.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtConfirmacion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmacion.TabIndex = 20;
+            this.txtConfirmacion.TabIndex = 14;
             this.txtConfirmacion.Text = "Confirmar contraseña";
             this.txtConfirmacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
@@ -301,37 +285,33 @@
             // 
             // chkDOI
             // 
-            this.chkDOI.Location = new System.Drawing.Point(440, 471);
-            this.chkDOI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkDOI.Location = new System.Drawing.Point(293, 306);
             this.chkDOI.Name = "chkDOI";
-            this.chkDOI.Size = new System.Drawing.Size(51, 24);
-            this.chkDOI.TabIndex = 21;
+            this.chkDOI.Size = new System.Drawing.Size(45, 20);
+            this.chkDOI.TabIndex = 10;
             this.chkDOI.Values.Text = "DOI";
             // 
             // chkISSN
             // 
-            this.chkISSN.Location = new System.Drawing.Point(440, 416);
-            this.chkISSN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkISSN.Location = new System.Drawing.Point(293, 270);
             this.chkISSN.Name = "chkISSN";
-            this.chkISSN.Size = new System.Drawing.Size(57, 24);
-            this.chkISSN.TabIndex = 22;
+            this.chkISSN.Size = new System.Drawing.Size(49, 20);
+            this.chkISSN.TabIndex = 9;
             this.chkISSN.Values.Text = "ISSN";
             // 
             // chkISBN
             // 
-            this.chkISBN.Location = new System.Drawing.Point(440, 359);
-            this.chkISBN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkISBN.Location = new System.Drawing.Point(293, 233);
             this.chkISBN.Name = "chkISBN";
-            this.chkISBN.Size = new System.Drawing.Size(57, 24);
-            this.chkISBN.TabIndex = 23;
+            this.chkISBN.Size = new System.Drawing.Size(50, 20);
+            this.chkISBN.TabIndex = 8;
             this.chkISBN.Values.Text = "ISBN";
             // 
             // lblEtiqueta
             // 
-            this.lblEtiqueta.Location = new System.Drawing.Point(440, 292);
-            this.lblEtiqueta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblEtiqueta.Location = new System.Drawing.Point(293, 190);
             this.lblEtiqueta.Name = "lblEtiqueta";
-            this.lblEtiqueta.Size = new System.Drawing.Size(103, 28);
+            this.lblEtiqueta.Size = new System.Drawing.Size(84, 23);
             this.lblEtiqueta.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEtiqueta.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEtiqueta.TabIndex = 25;
@@ -342,21 +322,19 @@
             this.cmbPalabras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.cmbPalabras.DropDownWidth = 121;
             this.cmbPalabras.IntegralHeight = false;
-            this.cmbPalabras.Location = new System.Drawing.Point(440, 579);
-            this.cmbPalabras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbPalabras.Location = new System.Drawing.Point(293, 376);
             this.cmbPalabras.Name = "cmbPalabras";
-            this.cmbPalabras.Size = new System.Drawing.Size(288, 21);
+            this.cmbPalabras.Size = new System.Drawing.Size(192, 18);
             this.cmbPalabras.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.LightYellow;
             this.cmbPalabras.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPalabras.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.cmbPalabras.TabIndex = 27;
+            this.cmbPalabras.TabIndex = 11;
             // 
             // lblPalabras
             // 
-            this.lblPalabras.Location = new System.Drawing.Point(440, 531);
-            this.lblPalabras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblPalabras.Location = new System.Drawing.Point(293, 345);
             this.lblPalabras.Name = "lblPalabras";
-            this.lblPalabras.Size = new System.Drawing.Size(154, 28);
+            this.lblPalabras.Size = new System.Drawing.Size(124, 23);
             this.lblPalabras.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPalabras.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPalabras.TabIndex = 26;
@@ -373,13 +351,13 @@
             this.btnAgregarPortada.FlatAppearance.BorderSize = 0;
             this.btnAgregarPortada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
             this.btnAgregarPortada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarPortada.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPortada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarPortada.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregarPortada.Location = new System.Drawing.Point(860, 390);
-            this.btnAgregarPortada.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregarPortada.Location = new System.Drawing.Point(573, 253);
+            this.btnAgregarPortada.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAgregarPortada.Name = "btnAgregarPortada";
-            this.btnAgregarPortada.Size = new System.Drawing.Size(331, 64);
-            this.btnAgregarPortada.TabIndex = 29;
+            this.btnAgregarPortada.Size = new System.Drawing.Size(221, 42);
+            this.btnAgregarPortada.TabIndex = 13;
             this.btnAgregarPortada.Text = "AGREGAR UNA IMAGEN";
             this.btnAgregarPortada.TextColor = System.Drawing.Color.FloralWhite;
             this.btnAgregarPortada.UseVisualStyleBackColor = false;
@@ -396,13 +374,13 @@
             this.btnAddPalabras.FlatAppearance.BorderSize = 0;
             this.btnAddPalabras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
             this.btnAddPalabras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddPalabras.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPalabras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddPalabras.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAddPalabras.Location = new System.Drawing.Point(440, 618);
-            this.btnAddPalabras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAddPalabras.Location = new System.Drawing.Point(293, 402);
+            this.btnAddPalabras.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAddPalabras.Name = "btnAddPalabras";
-            this.btnAddPalabras.Size = new System.Drawing.Size(288, 58);
-            this.btnAddPalabras.TabIndex = 30;
+            this.btnAddPalabras.Size = new System.Drawing.Size(192, 38);
+            this.btnAddPalabras.TabIndex = 12;
             this.btnAddPalabras.Text = "AGREGAR PALABRAS";
             this.btnAddPalabras.TextColor = System.Drawing.Color.FloralWhite;
             this.btnAddPalabras.UseVisualStyleBackColor = false;
@@ -419,12 +397,12 @@
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregar.Location = new System.Drawing.Point(888, 619);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(592, 402);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(278, 60);
+            this.btnAgregar.Size = new System.Drawing.Size(185, 39);
             this.btnAgregar.TabIndex = 31;
             this.btnAgregar.Text = "AGREGAR MATERIAL";
             this.btnAgregar.TextColor = System.Drawing.Color.FloralWhite;
@@ -433,10 +411,10 @@
             // 
             // frmAñadirMaterial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project.Properties.Resources.PrincipalBGYP;
-            this.ClientSize = new System.Drawing.Size(1264, 769);
+            this.ClientSize = new System.Drawing.Size(843, 500);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnAddPalabras);
             this.Controls.Add(this.btnAgregarPortada);
@@ -463,7 +441,6 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAñadirMaterial";
             this.Text = "frmAñadirMaterial";
             ((System.ComponentModel.ISupportInitialize)(this.cmbIdiomas)).EndInit();

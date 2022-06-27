@@ -10,6 +10,9 @@ using System.Data;
 
 namespace project.CLASS
 {
+    //
+    //clase padre de los constructores de busqueda
+    //
     public abstract class FormTemplate
     {
         public List<string> CmbItems = new List<string>();
@@ -20,15 +23,13 @@ namespace project.CLASS
         }
         public abstract void RunView(DataTable dt);
     }
-
+    //
+    //constructor de busqueda de eventos
+    //
     public class EventComplement : FormTemplate
     {
-
         public EventComplement()
         {
-            //
-            //Buscar
-            //
             CmbItems.Add("Nombre de Evento");
             CmbItems.Add("Area");
             consulta = new EventSQL();
@@ -36,17 +37,19 @@ namespace project.CLASS
 
         public override void RunView(DataTable dt)
         {
-            throw new NotImplementedException();
+            using (var view = new frmViewEvento(dt))
+            {
+                view.ShowDialog();
+            }
         }
     }
-
+    //
+    //constructor de busqueda de colecciones
+    //
     public class ColectionComplement : FormTemplate
     {
         public ColectionComplement()
         {
-            //
-            //Buscar
-            //
             CmbItems.Add("Nombre de coleccion");
             CmbItems.Add("Tipo de coleccion");
             CmbItems.Add("Genero");
@@ -54,20 +57,19 @@ namespace project.CLASS
         }
         public override void RunView(DataTable dt)
         {
-            using (var view = new frmViewCarnet(dt))
+            using (var view = new frmViewColeccion(dt))
             {
                 view.ShowDialog();
             }
         }
     }
-
+    //
+    //constructor de busqueda de materiales
+    //
     public class MaterialComplement : FormTemplate
     {
         public MaterialComplement()
         {
-            //
-            //Buscar
-            //
             CmbItems.Add("Nombre del material");
             CmbItems.Add("Palabras clave");
             CmbItems.Add("Autor");
@@ -76,40 +78,35 @@ namespace project.CLASS
         }
         public override void RunView(DataTable dt)
         {
-            using (var view = new frmViewCarnet(dt))
+            using (var view = new frmViewMaterial(dt))
             {
                 view.ShowDialog();
             }
         }
     }
-
+    //
+    //constructor de busqueda de reservas
+    //
     public class ReserveComplement : FormTemplate
     {
         public ReserveComplement()
         {
-            //
-            //Buscar
-            //
             CmbItems.Add("Reserva / Usuario");
             CmbItems.Add("Prestamo / Usuario");
             consulta = new ReserveSQL();
         }
         public override void RunView(DataTable dt)
         {
-            using (var view = new frmViewCarnet(dt))
-            {
-                view.ShowDialog();
-            }
+            MessageBox.Show("Informacion completa");
         }
     }
-
+    //
+    //constructor de busqueda de usuario 
+    //
     public class UserComplement : FormTemplate
     {
         public UserComplement()
         {
-            //
-            //Buscar
-            //
             CmbItems.Add("Nombre");
             CmbItems.Add("Ocupacion");
             consulta = new UserSQL();

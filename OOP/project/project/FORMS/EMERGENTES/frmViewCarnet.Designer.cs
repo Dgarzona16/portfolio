@@ -36,6 +36,7 @@
             this.lblNombre = new Krypton.Toolkit.KryptonLabel();
             this.lblEmail = new Krypton.Toolkit.KryptonLabel();
             this.lblTelefono = new Krypton.Toolkit.KryptonLabel();
+            this.lblInstitucion = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picFotografia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQR)).BeginInit();
             this.SuspendLayout();
@@ -43,10 +44,9 @@
             // picFotografia
             // 
             this.picFotografia.BackColor = System.Drawing.Color.LightYellow;
-            this.picFotografia.Location = new System.Drawing.Point(170, 27);
-            this.picFotografia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picFotografia.Location = new System.Drawing.Point(113, 18);
             this.picFotografia.Name = "picFotografia";
-            this.picFotografia.Size = new System.Drawing.Size(165, 169);
+            this.picFotografia.Size = new System.Drawing.Size(110, 110);
             this.picFotografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFotografia.TabIndex = 0;
             this.picFotografia.TabStop = false;
@@ -54,31 +54,28 @@
             // picQR
             // 
             this.picQR.BackColor = System.Drawing.Color.LightYellow;
-            this.picQR.Location = new System.Drawing.Point(105, 325);
-            this.picQR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picQR.Location = new System.Drawing.Point(70, 211);
             this.picQR.Name = "picQR";
-            this.picQR.Size = new System.Drawing.Size(165, 169);
+            this.picQR.Size = new System.Drawing.Size(110, 110);
             this.picQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picQR.TabIndex = 1;
             this.picQR.TabStop = false;
             // 
             // lblOcupacion
             // 
-            this.lblOcupacion.Location = new System.Drawing.Point(18, 18);
-            this.lblOcupacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblOcupacion.Location = new System.Drawing.Point(12, 108);
             this.lblOcupacion.Name = "lblOcupacion";
-            this.lblOcupacion.Size = new System.Drawing.Size(110, 28);
-            this.lblOcupacion.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOcupacion.Size = new System.Drawing.Size(81, 20);
+            this.lblOcupacion.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOcupacion.TabIndex = 2;
             this.lblOcupacion.Values.Text = "Ocupación";
             // 
             // lblId
             // 
-            this.lblId.Location = new System.Drawing.Point(167, 507);
-            this.lblId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblId.Location = new System.Drawing.Point(111, 330);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(33, 33);
-            this.lblId.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Size = new System.Drawing.Size(26, 23);
+            this.lblId.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.TabIndex = 3;
             this.lblId.Values.Text = "Id";
             // 
@@ -86,41 +83,48 @@
             // 
             this.lblNombre.AllowDrop = true;
             this.lblNombre.AutoSize = false;
-            this.lblNombre.Location = new System.Drawing.Point(18, 58);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lblNombre.MaximumSize = new System.Drawing.Size(150, 231);
+            this.lblNombre.Location = new System.Drawing.Point(12, 18);
+            this.lblNombre.MaximumSize = new System.Drawing.Size(100, 150);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(141, 129);
-            this.lblNombre.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Size = new System.Drawing.Size(94, 84);
+            this.lblNombre.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Values.Text = "Nombre";
             // 
             // lblEmail
             // 
-            this.lblEmail.Location = new System.Drawing.Point(19, 257);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblEmail.Location = new System.Drawing.Point(12, 190);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(61, 28);
-            this.lblEmail.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Size = new System.Drawing.Size(48, 20);
+            this.lblEmail.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Values.Text = "Email";
             // 
             // lblTelefono
             // 
-            this.lblTelefono.Location = new System.Drawing.Point(18, 217);
-            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblTelefono.Location = new System.Drawing.Point(12, 164);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(89, 28);
-            this.lblTelefono.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Size = new System.Drawing.Size(68, 20);
+            this.lblTelefono.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.TabIndex = 6;
             this.lblTelefono.Values.Text = "Telefono";
             // 
+            // lblInstitucion
+            // 
+            this.lblInstitucion.Location = new System.Drawing.Point(12, 138);
+            this.lblInstitucion.Name = "lblInstitucion";
+            this.lblInstitucion.Size = new System.Drawing.Size(77, 20);
+            this.lblInstitucion.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstitucion.TabIndex = 7;
+            this.lblInstitucion.Values.Text = "Institucion";
+            // 
             // frmViewCarnet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project.Properties.Resources.PrincipalBGYP;
-            this.ClientSize = new System.Drawing.Size(378, 555);
+            this.ClientSize = new System.Drawing.Size(252, 361);
+            this.Controls.Add(this.lblInstitucion);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblNombre);
@@ -129,10 +133,10 @@
             this.Controls.Add(this.picQR);
             this.Controls.Add(this.picFotografia);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "frmViewCarnet";
             this.Text = "Carnet";
             this.Load += new System.EventHandler(this.frmViewCarnet_Load);
@@ -152,5 +156,6 @@
         private Krypton.Toolkit.KryptonLabel lblNombre;
         private Krypton.Toolkit.KryptonLabel lblEmail;
         private Krypton.Toolkit.KryptonLabel lblTelefono;
+        private Krypton.Toolkit.KryptonLabel lblInstitucion;
     }
 }

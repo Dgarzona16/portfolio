@@ -31,19 +31,19 @@
             this.txtBuscador = new Krypton.Toolkit.KryptonTextBox();
             this.cmbCatalogo = new Krypton.Toolkit.KryptonComboBox();
             this.dtgvResultado = new Krypton.Toolkit.KryptonDataGridView();
+            this.btnEliminar = new project.CLASS.BButtons();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCatalogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvResultado)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscador
             // 
-            this.txtBuscador.Location = new System.Drawing.Point(16, 30);
-            this.txtBuscador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscador.Location = new System.Drawing.Point(12, 24);
             this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(751, 35);
+            this.txtBuscador.Size = new System.Drawing.Size(430, 26);
             this.txtBuscador.StateActive.Back.Color1 = System.Drawing.Color.White;
             this.txtBuscador.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(95)))));
-            this.txtBuscador.StateActive.Content.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscador.StateActive.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscador.TabIndex = 0;
             this.txtBuscador.TextChanged += new System.EventHandler(this.txtBuscador_TextChanged);
             // 
@@ -53,13 +53,12 @@
             this.cmbCatalogo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCatalogo.DropDownWidth = 167;
             this.cmbCatalogo.IntegralHeight = false;
-            this.cmbCatalogo.Location = new System.Drawing.Point(805, 30);
-            this.cmbCatalogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCatalogo.Location = new System.Drawing.Point(464, 25);
             this.cmbCatalogo.Name = "cmbCatalogo";
-            this.cmbCatalogo.Size = new System.Drawing.Size(279, 33);
+            this.cmbCatalogo.Size = new System.Drawing.Size(209, 24);
             this.cmbCatalogo.StateActive.ComboBox.Back.Color1 = System.Drawing.Color.White;
             this.cmbCatalogo.StateActive.ComboBox.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(95)))));
-            this.cmbCatalogo.StateActive.ComboBox.Content.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCatalogo.StateActive.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCatalogo.StateNormal.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCatalogo.StateNormal.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.cmbCatalogo.StateNormal.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
@@ -80,31 +79,50 @@
             this.dtgvResultado.AllowUserToDeleteRows = false;
             this.dtgvResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvResultado.Location = new System.Drawing.Point(16, 101);
-            this.dtgvResultado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgvResultado.Location = new System.Drawing.Point(12, 82);
             this.dtgvResultado.Name = "dtgvResultado";
             this.dtgvResultado.ReadOnly = true;
             this.dtgvResultado.RowHeadersWidth = 51;
-            this.dtgvResultado.Size = new System.Drawing.Size(1068, 482);
+            this.dtgvResultado.Size = new System.Drawing.Size(801, 392);
             this.dtgvResultado.StateCommon.Background.Color1 = System.Drawing.Color.LightYellow;
             this.dtgvResultado.StateCommon.Background.Image = global::project.Properties.Resources.PrincipalBGYP;
             this.dtgvResultado.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dtgvResultado.StateNormal.HeaderRow.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.dtgvResultado.StateNormal.HeaderRow.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.dtgvResultado.TabIndex = 2;
+            this.dtgvResultado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvResultado_CellClick);
             this.dtgvResultado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvResultado_CellDoubleClick);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnEliminar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnEliminar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnEliminar.BorderRadius = 20;
+            this.btnEliminar.BorderSize = 0;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(698, 19);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(110, 40);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextColor = System.Drawing.Color.White;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // frmBuscar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(1124, 615);
+            this.ClientSize = new System.Drawing.Size(843, 500);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dtgvResultado);
             this.Controls.Add(this.cmbCatalogo);
             this.Controls.Add(this.txtBuscador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBuscar";
             this.Text = "frmBuscar";
             this.Load += new System.EventHandler(this.frmBuscar_Load);
@@ -120,5 +138,6 @@
         private Krypton.Toolkit.KryptonTextBox txtBuscador;
         private Krypton.Toolkit.KryptonComboBox cmbCatalogo;
         private Krypton.Toolkit.KryptonDataGridView dtgvResultado;
+        private CLASS.BButtons btnEliminar;
     }
 }

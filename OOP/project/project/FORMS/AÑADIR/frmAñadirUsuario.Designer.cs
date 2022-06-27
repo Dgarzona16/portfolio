@@ -49,11 +49,10 @@
             // 
             // lblNombre
             // 
-            this.lblNombre.Location = new System.Drawing.Point(18, 19);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblNombre.Location = new System.Drawing.Point(12, 12);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(203, 28);
-            this.lblNombre.StateCommon.LongText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Size = new System.Drawing.Size(163, 23);
+            this.lblNombre.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Values.Text = "Nombre del Usuario";
@@ -61,54 +60,51 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(18, 66);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombre.Location = new System.Drawing.Point(12, 43);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(309, 30);
+            this.txtNombre.Size = new System.Drawing.Size(206, 23);
             this.txtNombre.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtNombre.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtNombre.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.txtNombre.StateActive.Content.Font = new System.Drawing.Font("Nunito ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.StateActive.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.txtNombre.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtNombre.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtNombre.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.TabIndex = 5;
+            this.txtNombre.TabIndex = 1;
             this.txtNombre.Text = "Nombre del Usuario";
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(18, 324);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDireccion.Location = new System.Drawing.Point(12, 211);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(309, 30);
+            this.txtDireccion.Size = new System.Drawing.Size(206, 23);
             this.txtDireccion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtDireccion.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtDireccion.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtDireccion.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtDireccion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.txtDireccion.StateActive.Content.Font = new System.Drawing.Font("Nunito ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.StateActive.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccion.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.txtDireccion.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtDireccion.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtDireccion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtDireccion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.TabIndex = 7;
+            this.txtDireccion.TabIndex = 2;
             this.txtDireccion.Text = "Dirección";
             this.txtDireccion.Enter += new System.EventHandler(this.txtDireccion_Enter);
             this.txtDireccion.Leave += new System.EventHandler(this.txtDireccion_Leave);
             // 
             // lblDireccion
             // 
-            this.lblDireccion.Location = new System.Drawing.Point(18, 276);
-            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblDireccion.Location = new System.Drawing.Point(12, 179);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(103, 28);
+            this.lblDireccion.Size = new System.Drawing.Size(84, 23);
             this.lblDireccion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.TabIndex = 6;
@@ -117,32 +113,30 @@
             // 
             // txtInstitucion
             // 
-            this.txtInstitucion.Location = new System.Drawing.Point(18, 564);
-            this.txtInstitucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtInstitucion.Location = new System.Drawing.Point(12, 367);
             this.txtInstitucion.Name = "txtInstitucion";
-            this.txtInstitucion.Size = new System.Drawing.Size(309, 30);
+            this.txtInstitucion.Size = new System.Drawing.Size(206, 23);
             this.txtInstitucion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtInstitucion.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtInstitucion.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtInstitucion.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtInstitucion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.txtInstitucion.StateActive.Content.Font = new System.Drawing.Font("Nunito ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInstitucion.StateActive.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInstitucion.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.txtInstitucion.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtInstitucion.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtInstitucion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtInstitucion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInstitucion.TabIndex = 9;
+            this.txtInstitucion.TabIndex = 3;
             this.txtInstitucion.Text = "Institución";
             this.txtInstitucion.Enter += new System.EventHandler(this.txtInstitucion_Enter);
             this.txtInstitucion.Leave += new System.EventHandler(this.txtInstitucion_Leave);
             // 
             // lblInstitucion
             // 
-            this.lblInstitucion.Location = new System.Drawing.Point(18, 517);
-            this.lblInstitucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblInstitucion.Location = new System.Drawing.Point(12, 336);
             this.lblInstitucion.Name = "lblInstitucion";
-            this.lblInstitucion.Size = new System.Drawing.Size(111, 28);
+            this.lblInstitucion.Size = new System.Drawing.Size(90, 23);
             this.lblInstitucion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstitucion.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstitucion.TabIndex = 8;
@@ -151,32 +145,30 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(372, 66);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTelefono.Location = new System.Drawing.Point(248, 43);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(309, 30);
+            this.txtTelefono.Size = new System.Drawing.Size(206, 23);
             this.txtTelefono.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtTelefono.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtTelefono.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtTelefono.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtTelefono.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.txtTelefono.StateActive.Content.Font = new System.Drawing.Font("Nunito ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.StateActive.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.txtTelefono.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtTelefono.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtTelefono.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtTelefono.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.TabIndex = 11;
+            this.txtTelefono.TabIndex = 4;
             this.txtTelefono.Text = "Teléfono";
             this.txtTelefono.Enter += new System.EventHandler(this.txtTelefono_Enter);
             this.txtTelefono.Leave += new System.EventHandler(this.txtTelefono_Leave);
             // 
             // lblTelefono
             // 
-            this.lblTelefono.Location = new System.Drawing.Point(372, 19);
-            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblTelefono.Location = new System.Drawing.Point(248, 12);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(97, 28);
+            this.lblTelefono.Size = new System.Drawing.Size(79, 23);
             this.lblTelefono.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.TabIndex = 10;
@@ -185,32 +177,30 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(372, 324);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCorreo.Location = new System.Drawing.Point(248, 211);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(309, 30);
+            this.txtCorreo.Size = new System.Drawing.Size(206, 23);
             this.txtCorreo.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtCorreo.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtCorreo.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtCorreo.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtCorreo.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.txtCorreo.StateActive.Content.Font = new System.Drawing.Font("Nunito ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.StateActive.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.txtCorreo.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtCorreo.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtCorreo.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtCorreo.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.TabIndex = 13;
+            this.txtCorreo.TabIndex = 5;
             this.txtCorreo.Text = "Correo electrónico";
             this.txtCorreo.Enter += new System.EventHandler(this.txtCorreo_Enter);
             this.txtCorreo.Leave += new System.EventHandler(this.txtCorreo_Leave);
             // 
             // lblCorreo
             // 
-            this.lblCorreo.Location = new System.Drawing.Point(372, 276);
-            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblCorreo.Location = new System.Drawing.Point(248, 179);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(188, 28);
+            this.lblCorreo.Size = new System.Drawing.Size(152, 23);
             this.lblCorreo.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.TabIndex = 12;
@@ -219,32 +209,30 @@
             // 
             // txtOcupacion
             // 
-            this.txtOcupacion.Location = new System.Drawing.Point(372, 568);
-            this.txtOcupacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtOcupacion.Location = new System.Drawing.Point(248, 369);
             this.txtOcupacion.Name = "txtOcupacion";
-            this.txtOcupacion.Size = new System.Drawing.Size(309, 30);
+            this.txtOcupacion.Size = new System.Drawing.Size(206, 23);
             this.txtOcupacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtOcupacion.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtOcupacion.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtOcupacion.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtOcupacion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
-            this.txtOcupacion.StateActive.Content.Font = new System.Drawing.Font("Nunito ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOcupacion.StateActive.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOcupacion.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.txtOcupacion.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtOcupacion.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
             this.txtOcupacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtOcupacion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOcupacion.TabIndex = 15;
+            this.txtOcupacion.TabIndex = 6;
             this.txtOcupacion.Text = "Ocupación";
             this.txtOcupacion.Enter += new System.EventHandler(this.txtOcupacion_Enter);
             this.txtOcupacion.Leave += new System.EventHandler(this.txtOcupacion_Leave);
             // 
             // lblOcupacion
             // 
-            this.lblOcupacion.Location = new System.Drawing.Point(372, 520);
-            this.lblOcupacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblOcupacion.Location = new System.Drawing.Point(248, 338);
             this.lblOcupacion.Name = "lblOcupacion";
-            this.lblOcupacion.Size = new System.Drawing.Size(115, 28);
+            this.lblOcupacion.Size = new System.Drawing.Size(94, 23);
             this.lblOcupacion.StateCommon.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOcupacion.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOcupacion.TabIndex = 14;
@@ -255,27 +243,25 @@
             // 
             this.picFotografia.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.picFotografia.Image = global::project.Properties.Resources.UserGoldIcon;
-            this.picFotografia.Location = new System.Drawing.Point(831, 35);
-            this.picFotografia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picFotografia.Location = new System.Drawing.Point(554, 23);
             this.picFotografia.Name = "picFotografia";
-            this.picFotografia.Size = new System.Drawing.Size(310, 345);
+            this.picFotografia.Size = new System.Drawing.Size(207, 224);
             this.picFotografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFotografia.TabIndex = 16;
             this.picFotografia.TabStop = false;
             // 
             // txtConfirmacion
             // 
-            this.txtConfirmacion.Location = new System.Drawing.Point(831, 569);
-            this.txtConfirmacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtConfirmacion.Location = new System.Drawing.Point(554, 370);
             this.txtConfirmacion.Name = "txtConfirmacion";
-            this.txtConfirmacion.Size = new System.Drawing.Size(312, 31);
+            this.txtConfirmacion.Size = new System.Drawing.Size(208, 26);
             this.txtConfirmacion.StateActive.Back.Color1 = System.Drawing.Color.LightYellow;
             this.txtConfirmacion.StateActive.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(29)))), ((int)(((byte)(63)))));
             this.txtConfirmacion.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
             this.txtConfirmacion.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtConfirmacion.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacion.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmacion.TabIndex = 22;
+            this.txtConfirmacion.TabIndex = 8;
             this.txtConfirmacion.Text = "Confirmar contraseña";
             this.txtConfirmacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtConfirmacion.Enter += new System.EventHandler(this.txtConfirmacion_Enter);
@@ -292,13 +278,13 @@
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregar.Location = new System.Drawing.Point(857, 609);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(571, 396);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(265, 61);
-            this.btnAgregar.TabIndex = 24;
+            this.btnAgregar.Size = new System.Drawing.Size(177, 40);
+            this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "AGREGAR USUARIO";
             this.btnAgregar.TextColor = System.Drawing.Color.FloralWhite;
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -315,13 +301,13 @@
             this.btnAgregarFotografia.FlatAppearance.BorderSize = 0;
             this.btnAgregarFotografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
             this.btnAgregarFotografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarFotografia.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarFotografia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarFotografia.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAgregarFotografia.Location = new System.Drawing.Point(829, 400);
-            this.btnAgregarFotografia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregarFotografia.Location = new System.Drawing.Point(553, 260);
+            this.btnAgregarFotografia.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAgregarFotografia.Name = "btnAgregarFotografia";
-            this.btnAgregarFotografia.Size = new System.Drawing.Size(312, 74);
-            this.btnAgregarFotografia.TabIndex = 23;
+            this.btnAgregarFotografia.Size = new System.Drawing.Size(208, 48);
+            this.btnAgregarFotografia.TabIndex = 7;
             this.btnAgregarFotografia.Text = "AGREGAR FOTOGRAFÍA";
             this.btnAgregarFotografia.TextColor = System.Drawing.Color.FloralWhite;
             this.btnAgregarFotografia.UseVisualStyleBackColor = false;
@@ -329,11 +315,11 @@
             // 
             // frmAñadirUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project.Properties.Resources.PrincipalBGY;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1264, 769);
+            this.ClientSize = new System.Drawing.Size(843, 500);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnAgregarFotografia);
             this.Controls.Add(this.txtConfirmacion);
@@ -351,7 +337,6 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAñadirUsuario";
             this.Text = "frmAñadirUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.picFotografia)).EndInit();

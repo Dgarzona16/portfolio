@@ -25,11 +25,21 @@ namespace project.FORMS
             //
             //Fotografia
             //
-            picFotografia.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + dt.Rows[0]["Fotografia"].ToString());
+            try
+            {
+                picFotografia.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + dt.Rows[0]["Fotografia"].ToString());
+            }catch (Exception)
+            {
+                picFotografia.Image = null;
+            }
             //
             //Ocupacion
             //
             lblOcupacion.Text = dt.Rows[0]["Ocupacion"].ToString();
+            //
+            //Institucion
+            //
+            lblInstitucion.Text = dt.Rows[0]["Institucion"].ToString();
             //
             //QR
             //

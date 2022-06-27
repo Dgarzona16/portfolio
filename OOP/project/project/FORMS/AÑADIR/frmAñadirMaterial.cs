@@ -202,6 +202,9 @@ namespace project.FORMS
                     txtConfirmacion.Clear();
                     cmbPalabras.Items.Clear();
                     picPortada.Image = null;
+                    cmbColeccion.Text = "";
+                    cmbFormato.Text = "";
+                    cmbIdiomas.Text = "";
                 }
                 else
                 {
