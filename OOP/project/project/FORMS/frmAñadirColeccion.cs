@@ -125,6 +125,7 @@ namespace project.FORMS
                     txtTipo.Clear();
                     txtGenero.Clear();
                     txtConfirmacion.Clear();
+                    cmbAreas.Text = "";
                 }
                 else
                 {

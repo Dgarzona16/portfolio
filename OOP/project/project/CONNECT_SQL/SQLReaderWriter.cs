@@ -16,6 +16,7 @@ namespace project.CONNECT_SQL
     {
         DataTable consult(string a, string b);
         DataTable GetData(int id);
+        bool Delete(int id);
     }
     //
     //Evento
@@ -125,7 +126,50 @@ namespace project.CONNECT_SQL
 
         public DataTable GetData(int id)
         {
-            throw new NotImplementedException();
+            DataTable dt = new DataTable();
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"SELECT E.Titulo, E.Imagen, E.FechaHora_Inicio, E.FechaHora_Fin,E.CantidadParticipantes, A.Nombre AS 'Area', P.Numero AS 'Piso' FROM EVENTO AS E INNER JOIN AREA AS A ON E.Id_Area = A.Id INNER JOIN PISO AS P ON A.Id_Piso = P.Id WHERE E.Id = {id}";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = command;
+                    da.Fill(dt);
+                }
+            }
+            return dt;
+        }
+        public bool Delete(int id)
+        {
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    connection.Open();
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM OBJETIVO WHERE Id_Evento = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM EVENTO WHERE Id = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
     //
@@ -209,7 +253,43 @@ namespace project.CONNECT_SQL
         }
         public DataTable GetData(int id)
         {
-            throw new NotImplementedException();
+            DataTable dt = new DataTable();
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"SELECT C.Nombre, C.Tipo, C.Genero, A.Nombre AS 'Area',P.Numero AS 'Piso' FROM COLECCION AS C INNER JOIN AREA AS A ON C.Id_Area = A.Id INNER JOIN PISO AS P ON A.Id_Piso = P.Id WHERE C.Id = {id}";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    adapter.SelectCommand = command;                    
+                    adapter.Fill(dt);                    
+                }
+            }
+            return dt;
+        }
+        public bool Delete(int id)
+        {
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    connection.Open();
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM COLECCION WHERE Id = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
     //
@@ -272,7 +352,7 @@ namespace project.CONNECT_SQL
             }
             return id;
         }
-        DataTable SQLReaderWriter.consult(string word, string colunm)
+        public DataTable consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
 
@@ -359,7 +439,71 @@ namespace project.CONNECT_SQL
         }
         public DataTable GetData(int id)
         {
-            throw new NotImplementedException();
+            DataTable dt = new DataTable();
+            using (var connection = getConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = $"SELECT M.Nombre, M.Portada, M.Autor, M.Idioma, M.Editorial, M.Fecha_Publicacion, F.Tipo AS 'Formato', C.Nombre AS 'Coleccion' FROM MATERIAL AS M INNER JOIN FORMATO AS F ON M.Id_Formato = F.Id INNER JOIN COLECCION AS C ON M.Id_Coleccion = C.Id WHERE M.Id = {id}";
+                    command.CommandType = CommandType.Text;
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = command;
+                    da.Fill(dt);
+                }
+            }
+            return dt;
+        }
+        public bool Delete(int id)
+        {
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    connection.Open();
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM PRESTAMO WHERE Id_Material = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM RESERVA WHERE Id_Material = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM ETIQUETA WHERE Id_Material = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM PALABRAS WHERE Id_Material = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM MATERIAL WHERE Id = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
     //
@@ -370,7 +514,7 @@ namespace project.CONNECT_SQL
         public ReserveSQL() : base()
         {
         }
-        DataTable SQLReaderWriter.consult(string word, string colunm)
+        public DataTable consult(string word, string colunm)
         {
             DataTable dt = new DataTable();
 
@@ -383,11 +527,11 @@ namespace project.CONNECT_SQL
 
                     if (colunm == "Reserva / Usuario")
                     {
-                        command.CommandText = $"SELECT USUARIO.Nombre AS 'Usuario', RESERVA.FechaHora_Reserva AS 'Fecha_Reserva', RESERVA.FechaHora_Prestamo AS 'Fecha_Prestamo', RESERVA.FechaHora_Devolucion AS 'Fecha_Devolucion', MATERIAL.Nombre AS 'Objeto_Prestado'FROM RESERVA INNER JOIN USUARIO ON RESERVA.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON RESERVA.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
+                        command.CommandText = $"SELECT RESERVA.Id, USUARIO.Nombre AS 'Usuario', RESERVA.FechaHora_Reserva AS 'Fecha_Reserva', RESERVA.FechaHora_Prestamo AS 'Fecha_Prestamo', RESERVA.FechaHora_Devolucion AS 'Fecha_Devolucion', MATERIAL.Nombre AS 'Objeto_Prestado'FROM RESERVA INNER JOIN USUARIO ON RESERVA.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON RESERVA.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
                     }
                     if (colunm == "Prestamo / Usuario")
                     {
-                        command.CommandText = $"SELECT USUARIO.Nombre AS 'Usuario', PRESTAMO.FechaHora_Prestamo AS 'Fecha Prestamo', PRESTAMO.FechaHora_Devolucion AS 'Fecha devolucion', MATERIAL.Nombre AS 'Objeto prestado'FROM PRESTAMO INNER JOIN USUARIO ON PRESTAMO.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON PRESTAMO.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
+                        command.CommandText = $"SELECT PRESTAMO.Id, USUARIO.Nombre AS 'Usuario', PRESTAMO.FechaHora_Prestamo AS 'Fecha Prestamo', PRESTAMO.FechaHora_Devolucion AS 'Fecha devolucion', MATERIAL.Nombre AS 'Objeto prestado'FROM PRESTAMO INNER JOIN USUARIO ON PRESTAMO.Id_Usuario = USUARIO.Id INNER JOIN MATERIAL ON PRESTAMO.Id_Material = MATERIAL.Id WHERE USUARIO.Nombre LIKE '{word}%'";
                     }
 
                     command.CommandType = CommandType.Text;
@@ -462,7 +606,58 @@ namespace project.CONNECT_SQL
         }
         public DataTable GetData(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                throw new NotImplementedException();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+        public bool Delete(int id)
+        {
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    connection.Open();
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM PRESTAMO WHERE Id = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }                    
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public bool DeleteR(int id)
+        {
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    connection.Open();
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM Reserva WHERE Id = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
     //
@@ -525,20 +720,63 @@ namespace project.CONNECT_SQL
             using (var connection = getConnection())
             {
                 connection.Open();
-                using (var command = new SqlCommand())
+                try
                 {
-                    command.Connection = connection;
-                    command.CommandText = $"INSERT INTO USUARIO (Nombre, Direccion, Institucion, Telefono, Correo, Fotografia, Ocupacion) VALUES ('{UserData.Nombre}', '{UserData.Direccion}', '{UserData.Institucion}', '{UserData.Telefono}', '{UserData.Correo}', '{UserData.Fotografia}', '{UserData.Ocupacion}')";
-                    command.CommandType = CommandType.Text;
-                    if (command.ExecuteNonQuery() > 0)
+                    using (var command = new SqlCommand())
                     {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
+                        command.Connection = connection;
+                        command.CommandText = $"INSERT INTO USUARIO (Nombre, Direccion, Institucion, Telefono, Correo, Fotografia, Ocupacion) VALUES ('{UserData.Nombre}', '{UserData.Direccion}', '{UserData.Institucion}', '{UserData.Telefono}', '{UserData.Correo}', '{UserData.Fotografia}', '{UserData.Ocupacion}')";
+                        command.CommandType = CommandType.Text;
+                        if (command.ExecuteNonQuery() > 0)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
                     }
                 }
+                catch (Exception)
+                {
+                    return false;
+                }
+            }
+        }
+        public bool Delete(int id)
+        {
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    connection.Open();
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM PRESTAMO WHERE Id_Usuario = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM RESERVA WHERE Id_Usuario = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                    using (var command = new SqlCommand())
+                    {
+                        command.Connection = connection;
+                        command.CommandText = $"DELETE FROM USUARIO WHERE Id = {id}";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
     }
