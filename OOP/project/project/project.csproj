@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C55098DB-14DB-438E-94CD-0C0865091610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Krypton.Toolkit, Version=65.22.6.152, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Toolkit.65.22.6.152\lib\net48\Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASS\BButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CLASS\FormTemplate.cs" />
+    <Compile Include="CLASS\NewData.cs" />
+    <Compile Include="CLASS\User_cache.cs" />
+    <Compile Include="CONNECT_SQL\accessSQL.cs" />
+    <Compile Include="CONNECT_SQL\CheckAdmin.cs" />
+    <Compile Include="CONNECT_SQL\SQLReaderWriter.cs" />
+    <Compile Include="FORMS\frmAñadirColeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirColeccion.Designer.cs">
+      <DependentUpon>frmAñadirColeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirColeccion.Designer.cs">
+      <DependentUpon>frmAñadirColeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirColeccion.Designer.cs">
+      <DependentUpon>frmAñadirColeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirEvento.Designer.cs">
+      <DependentUpon>frmAñadirEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirMaterial.Designer.cs">
+      <DependentUpon>frmAñadirMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirReserva.Designer.cs">
+      <DependentUpon>frmAñadirReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmAñadirUsuario.Designer.cs">
+      <DependentUpon>frmAñadirUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmBuscar.Designer.cs">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmDialogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmDialogo.Designer.cs">
+      <DependentUpon>frmDialogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmViewCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmViewCarnet.Designer.cs">
+      <DependentUpon>frmViewCarnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmViewColeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmViewColeccion.Designer.cs">
+      <DependentUpon>frmViewColeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmViewEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmViewEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmViewEvento.Designer.cs">
+      <DependentUpon>frmViewEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmViewMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmViewMaterial.Designer.cs">
+      <DependentUpon>frmViewMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORMS\frmAñadirEvento.resx">
+      <DependentUpon>frmAñadirEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmAñadirMaterial.resx">
+      <DependentUpon>frmAñadirMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmAñadirReserva.resx">
+      <DependentUpon>frmAñadirReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmAñadirUsuario.resx">
+      <DependentUpon>frmAñadirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmBuscar.resx">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmDialogo.resx">
+      <DependentUpon>frmDialogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmViewCarnet.resx">
+      <DependentUpon>frmViewCarnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmViewColeccion.resx">
+      <DependentUpon>frmViewColeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmViewEvento.resx">
+      <DependentUpon>frmViewEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmViewMaterial.resx">
+      <DependentUpon>frmViewMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EventGoldIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colecciones_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BINAES %28logo%29 - POO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBGW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BINAESLogoGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoESGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBGGold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGW1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrincipalBGYP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGoldIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaterialGoldIconWB.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
