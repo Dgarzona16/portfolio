@@ -115,29 +115,29 @@ INSERT INTO PISO VALUES (3);
 INSERT INTO PISO VALUES (4);
 			--AREAS--
 --PISO 1--
-INSERT INTO AREA VALUES ('Salon l�dico 1','Area de libros y entretenimiento para ni�os','7:00 AM a 10:00 PM','Javier Barrera',1);
+INSERT INTO AREA VALUES ('Salon lúdico 1','Area de libros y entretenimiento para niños','7:00 AM a 10:00 PM','Javier Barrera',1);
 INSERT INTO AREA VALUES ('Auditorium','Sala reservada para lecturas Publicas, conferencias y presentaciones','8:00 AM a 8:00PM','Gilberto San Roman',1);
 INSERT INTO AREA VALUES ('Area de computacion 1A','Sala de computacion para prestamos de equipos informaticos','7:00 AM a 10:00PM','Juan Gonzalo',1);
-INSERT INTO AREA VALUES ('Area de computacion 1B','Sala de computacion para prestamos de equipos informaticos','7:00 AM a 10:00PM','N�ria Eva',1);
+INSERT INTO AREA VALUES ('Area de computacion 1B','Sala de computacion para prestamos de equipos informaticos','7:00 AM a 10:00PM','Núria Eva',1);
 INSERT INTO AREA VALUES ('Area de Biblioteca 1A','Sala de lectura individual con la mayor cantidad de materiales y ejemplares','7:00 AM a 10:00PM','Benito Galeano',1);
 INSERT INTO AREA VALUES ('Area de Biblioteca 1B','Sala de lectura individual con la mayor cantidad de materiales y ejemplares','7:00 AM a 10:00PM','Guilermo Peinado',1);
-INSERT INTO AREA VALUES ('Area de promocion a la inclusion','�rea de promoci�n de la autonom�a personal e inclusi�n social','7:00AM a 10:00PM','Nacho Ocana',1);
-INSERT INTO AREA VALUES ('Area de promocion a la inclusion','�rea de promoci�n de la autonom�a personal e inclusi�n social ','7:00AM a 10:00PM','Mercedes Deliz',1);
+INSERT INTO AREA VALUES ('Area de promocion a la inclusion','Área de promoción de la autonomía personal e inclusión social','7:00AM a 10:00PM','Nacho Ocana',1);
+INSERT INTO AREA VALUES ('Area de promocion a la inclusion','Área de promoción de la autonomía personal e inclusión social ','7:00AM a 10:00PM','Mercedes Deliz',1);
 --PISO 2--
-INSERT INTO AREA VALUES ('Salon l�dico 2','Area de libros y entretenimiento para ni�os','7:00AM a 10:00PM','Noelia Gonsales',2);
-INSERT INTO AREA VALUES ('Sala de proyeccion 1','Sala para la exhibici�n de pel�culas compuesto por lo general de una pantalla de proyecci�n y un patio de butacas.','7:00 AM a 10:00PM','Aina Gaona',2);
+INSERT INTO AREA VALUES ('Salon lúdico 2','Area de libros y entretenimiento para niños','7:00AM a 10:00PM','Noelia Gonsales',2);
+INSERT INTO AREA VALUES ('Sala de proyeccion 1','Sala para la exhibición de películas compuesto por lo general de una pantalla de proyección y un patio de butacas.','7:00 AM a 10:00PM','Aina Gaona',2);
 INSERT INTO AREA VALUES ('Area de computacion 2A','Sala de computacion para prestamos de equipos informaticos','7:00 AM a 10:00PM','Marcela Escoto',2);
 INSERT INTO AREA VALUES ('Area de computacion 2B','Sala de computacion para prestamos de equipos informaticos','7:00 AM a 10:00PM','Aina Gaona',2);
 INSERT INTO AREA VALUES ('Area de biblioteca 2A','Sala de lectura individual con la mayor cantidad de materiales y ejemplares','7:00 AM a 10:00PM','Rosita Duenas',2);
 INSERT INTO AREA VALUES ('Area de biblioteca 2B','Sala de lectura individual con la mayor cantidad de materiales y ejemplares','7:00 AM a 10:00PM','Leocadio De Santiago',2);
 --PISO 3--
-INSERT INTO AREA VALUES ('Sala de proyeccion 2','Sala para la exhibici�n de pel�culas compuesto por lo general de una pantalla de proyecci�n y un patio de butacas.','7:00AM a 10:00PM','Ricarda Tijerina',3);
+INSERT INTO AREA VALUES ('Sala de proyeccion 2','Sala para la exhibición de películas compuesto por lo general de una pantalla de proyección y un patio de butacas.','7:00AM a 10:00PM','Ricarda Tijerina',3);
 INSERT INTO AREA VALUES ('Area de computacion 3A','Sala de computacion para prestamos de equipos informaticos','7:00AM a 10:00PM','Estela Caba',3);
 INSERT INTO AREA VALUES ('Area de computacion 3B','Sala de computacion para prestamos de equipos informaticos','7:00AM a 10:00PM','Estela Caba',3);
 INSERT INTO AREA VALUES ('Area de biblioteca 3A','Sala de lectura individual con la mayor cantidad de materiales y ejemplares','7:00 M a 10:00PM','Roque Bailon',3);
 INSERT INTO AREA VALUES ('Area de biblioteca 3B','Sala de lectura individual con la mayor cantidad de materiales y ejemplares','7:00 M a 10:00PM','Roque Bailon',3);
 --PISO 4--
-INSERT INTO AREA VALUES ('Sala de proyeccion 3','Sala para la exhibici�n de pel�culas compuesto por lo general de una pantalla de proyecci�n y un patio de butacas.','7:00AM a 10:00PM','Ricarda Tijerina',4);
+INSERT INTO AREA VALUES ('Sala de proyeccion 3','Sala para la exhibición de películas compuesto por lo general de una pantalla de proyección y un patio de butacas.','7:00AM a 10:00PM','Ricarda Tijerina',4);
 INSERT INTO AREA VALUES ('Area de computacion 4A','Sala de computacion para prestamos de equipos informaticos','7:00AM a 10:00PM','Nacho Ocana',4);
 INSERT INTO AREA VALUES ('Area de computacion 4B','Sala de computacion para prestamos de equipos informaticos','7:00AM a 10:00PM','Nacho Ocana',4);
 INSERT INTO AREA VALUES ('Sala de Investigacion 1','Sala de desarrollos para investigaciones','7:00AM a 10:00PM','Juan Gonzalo',4);
